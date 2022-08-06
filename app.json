@@ -1,0 +1,103 @@
+{
+    "name": "Elsa-V3",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline",
+      "Redirect Bot",
+      "Elsa bot"
+    ],
+    "website": "https://github.com/Botowner/Elsa-V3",
+    "repository": "https://github.com/Botowner/Elsa-V3",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "required": false
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "required": true
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "required": true
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "required": false
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "required": true
+        },
+        "DATABASE_URI": {
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com.",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "required": false
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Telegram_files",
+            "required": false
+        },
+        "DELETE_TIME":{
+            "description": "Time in seconds to delete the Messages. Defaults to 300 (5 minutes).",
+            "value": "300",
+            "required": false
+        },
+        "START_IMAGE_URL":{
+            "description": "Start image URL. Defaults to https://telegra.ph/file/e4cbf7f611329017ce787.jpg",
+            "value": "https://telegra.ph/file/e4cbf7f611329017ce787.jpg",
+            "required": false
+        },
+        "UNAUTHORIZED_CALLBACK_TEXT":{
+            "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
+            "value": "𝑯𝒆𝒚 𝒃𝒓𝒐 𝒕𝒉𝒊𝒔 𝒊𝒔 𝒏𝒐𝒕 𝒇𝒂𝒊𝒓",
+            "required": false
+        },
+        "REDIRECT_TO":{
+            "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect). AUTH CHANNEL and REDIRECT Channel must be same",
+            "value": "oKda",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
