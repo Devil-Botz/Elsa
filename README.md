@@ -51,6 +51,18 @@
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 ### Optional Variables
 
+## Credits
+<details>
+ Thanks To [Mahesh](https://github.com/Mahesh0253/Media-Search-bot) MediaSearch
+
+Thanks To [Subinps](https://github.com/subinps/Media-Search-bot) AutoFilter
+
+ Thanks To [DKBOTx](https://github.com/DKBOTx) Main repo
+ 
+ Thanks To [Joelkb](https://github.com/Joelkb) Collaborator  
+
+ Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner
+</details>
 
 ## Deploy
 You can deploy this bot anywhere.
@@ -63,6 +75,10 @@ You can deploy this bot anywhere.
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
+
+<summary> Deploy To Okteto </summary>
+You can deploy to Okteto.
+
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
