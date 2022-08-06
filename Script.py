@@ -23,7 +23,11 @@ class script(object):
 ★ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 : 𝖵10 [𝙱𝙴𝚃𝙰]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- Elsa 𝖨𝗌 𝖺 Not an 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍
+𝙴𝙻𝚂𝙰 𝙸𝚂 𝙰𝙽 𝙾𝙿𝙴𝙽 𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙵𝙾𝚁𝙺 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾 𝙰𝙽𝙳 𝙲𝚄𝚂𝚃𝙾𝙼𝙸𝚂𝙴 𝙸𝚃 𝚆𝙸𝚃𝙷 𝚄𝙿𝚂𝚃𝚁𝙴𝙰𝙼 𝚁𝙴𝙿𝙾. 
+𝙶𝙸𝚅𝙴 𝙰 𝚂𝚃𝙰𝚁 𝙵𝙾𝚁 𝙴𝙻𝚂𝙰
+
+𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 : <a href='https://t.me/cinemala_com1/18'>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
+𝚅𝙰𝚁𝚂 : <a href='https://t.me/cinemala_com1/17'>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>
 
 Devs:
 » <a href='https://t.me/Aswin_pm_Bot'>𝙾𝚆𝙽𝙴𝚁</a>
