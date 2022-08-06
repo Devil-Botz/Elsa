@@ -2,18 +2,18 @@
   <img src="assets/Elsa.png" alt="Elsa-V3">
 </p>
 <h1 align="center">
-  <b>Elsa-V3</b>
+  <b>Elsa</b>
 </h1>
 
 <a href="https://t.me/cinemala_com1">
   <img src="https://img.shields.io/badge/Join-blue?logo=telegram" width="70">
 
 
-[![Stars](https://img.shields.io/github/stars/Devil-Botz/Elsa-V3?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa-V3/stargazers)
-[![Forks](https://img.shields.io/github/forks/Devil-Botz/Elsa-V3?style=flat-square&color=blue)](https://github.com/Devil-Botz/Elsa-V3/fork)
-[![Size](https://img.shields.io/github/repo-size/Devil-Botz/Elsa-V3?style=flat-square&color=red)](https://github.com/Devil-Botz/Elsa-V3)   
-[![Open Source happy ](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Devil-Botz/Elsa-V3)   
-[![Contributors](https://img.shields.io/github/contributors/Devil-Botz/Elsa-V3?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa-V3/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/stargazers)
+[![Forks](https://img.shields.io/github/forks/Devil-Botz/Elsa?style=flat-square&color=blue)](https://github.com/Devil-Botz/Elsa/fork)
+[![Size](https://img.shields.io/github/repo-size/Devil-Botz/Elsa?style=flat-square&color=red)](https://github.com/Devil-Botz/Elsa)   
+[![Open Source happy ](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Devil-Botz/Elsa)   
+[![Contributors](https://img.shields.io/github/contributors/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/graphs/contributors)
 
 ## New_feature
 
@@ -73,7 +73,7 @@ You can deploy this bot anywhere.
 <summary>Deploy To Heroku</summary>
 <br>
 <p>
-<a href="https://heroku.com/deploy?template=https://github.com/Devil-Botz/Elsa-V3">
+<a href="https://heroku.com/deploy?template=https://github.com/Devil-Botz/Elsa">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
