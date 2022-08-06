@@ -58,11 +58,11 @@
 
  Thanks To [Subinps](https://github.com/subinps/Media-Search-bot) AutoFilter & Base repo
 
- Thanks To [DKBOTx](https://github.com/DKBOTx) Main repo
+ Thanks To [DKBOTx](https://github.com/DKBOTx) 2nd Base repo
  
- Thanks To [Joelkb](https://github.com/Joelkb) Collaborator  
+ Thanks To [Joelkb](https://github.com/Joelkb) Collaborator
 
- Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner
+  Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner [2GB+ Supporting Added]
 
 </details>
 
