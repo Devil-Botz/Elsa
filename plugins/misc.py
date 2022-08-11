@@ -61,7 +61,7 @@ async def who_is(client, message):
         "`Fetching user info...`"
     )
     await status_message.edit(
-        "```Processing user info...```"
+        "`Processing user info...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
