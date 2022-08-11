@@ -62,7 +62,8 @@
  
  Thanks To [Joelkb](https://github.com/Joelkb) Collaborator [Error fixed, Add new features]
 
-  Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner [2GB+ Supporting Added]
+  Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner 
+
 
 </details>
 
@@ -84,7 +85,7 @@ You can deploy to Okteto.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Botowner/Elsa-V3
+git clone https://github.com/Botowner/Elsa
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
