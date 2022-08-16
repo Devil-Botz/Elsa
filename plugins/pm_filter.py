@@ -473,10 +473,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('TTs', callback_data='tts')
         ], [
             InlineKeyboardButton('G-Trans', callback_data='gtrans'),
-            InlineKeyboardButton('T-Graph', callback_data='tele'),           
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
-        ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start')
+            InlineKeyboardButton('T-Graph', callback_data='tele'),
+            InlineKeyboardButton('Next', callback_data='aswin')             
+        ]]
+        await query.message.edit_text(                     
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "aswin":
+        buttons = [[
+             InlineKeyboardButton('Aud-book', callback_data='abook'),
+             InlineKeyboardButton('Covid', callback_data='corona')
+         ], [
+             InlineKeyboardButton('Back', callback_data='help'),
+             InlineKeyboardButton('🔮 Status', callback_data='stats'),
+             InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -612,6 +624,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "corona":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CORONA_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "abook":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ABOOK_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
