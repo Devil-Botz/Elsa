@@ -49,7 +49,7 @@ def song(client, message):
         open(thumb_name, 'wb').write(thumb.content)
 
 
-        performer = f"[Elsa]" 
+        performer = f"[Elsa - Cinemala.com™]" 
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
