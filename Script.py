@@ -133,3 +133,12 @@ ID - <code>{}</code>
 Name - {}
 Elsa
 """
+    FILE_MSG = """
+<b>Hai 👋 {} </b>😍
+
+<b>📫 Your File is Ready</b>
+
+<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>{title}</code>              
+                       
+<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{size}</b>
+"""
