@@ -376,8 +376,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 file_send=await client.send_cached_media(
                     chat_id=FILE_CHANNEL,
                     file_id=file_id,
-                    caption=f_caption,
-                    protect_content=True if ident == "filep" else False 
+                    caption=script.CHANNEL_CAP,
+                    protect_content=True if ident == "filep" else False,
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton("Channel", url="https://t.me/cinemala_com1"
+                            ]
+                        ]
+                    )
                 )
                 Joel_tgx = await query.message.reply_text(
                     script.FILE_MSG.format(query.from_user.mention, title, size),
