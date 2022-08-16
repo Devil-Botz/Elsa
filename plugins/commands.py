@@ -417,11 +417,11 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Bot PM',
+                    'Redirect To',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["botpm"] else '❌ No',
+                    'Bot PM' if settings["botpm"] else 'Channel',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
             ],
