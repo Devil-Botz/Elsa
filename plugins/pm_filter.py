@@ -1,4 +1,5 @@
 # Kanged From @TroJanZheX
+# REDIRECT added https://github.com/Joelkb
 import asyncio
 import re
 import ast
