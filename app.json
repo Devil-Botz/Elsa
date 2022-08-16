@@ -66,7 +66,10 @@
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
-        }
+        },
+        "FILE_CHANNEL": {
+            "description": "File REDIRECT TO , give a Channel id with -100xxxxxxx.",
+            "required": true
     },
     "addons": [],
     "buildpacks": [{
