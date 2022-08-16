@@ -6,7 +6,7 @@ async def admin_check(message: Message) -> bool:
     if not message.from_user:
         return False
 
-    if message.chat.type not in ["supergroup", "channel"]:
+    if message.chat.type not in [enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL]:
         return False
 
     if message.from_user.id in [
@@ -24,8 +24,8 @@ async def admin_check(message: Message) -> bool:
         user_id=user_id
     )
     admin_strings = [
-        "creator",
-        "administrator"
+        enums.ChatMemberStatus.OWNER,
+        enums.ChatMemberStatus.ADMINISTRATOR
     ]
     # https://git.colinshark.de/PyroBot/PyroBot/src/branch/master/pyrobot/modules/admin.py#L69
     if check_status.status not in admin_strings:
