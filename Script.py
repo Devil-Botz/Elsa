@@ -93,6 +93,13 @@ Translate text to speech
 • 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
 • 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
 • 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
+    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+Do as you wish with telegra.ph module!
+</b>USAGE:</b>
+✒️ /telegraph - Send me Picture or Vide Under (5MB)
+<b>NOTE:</b>
+• This Command Is Available in goups and pms
+• This Command Can be used by everyone"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
