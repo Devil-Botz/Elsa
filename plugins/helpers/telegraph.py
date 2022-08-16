@@ -22,7 +22,7 @@ async def telegraph(client, message):
         return
     _t = os.path.join(
         TMP_DOWNLOAD_DIRECTORY,
-        str(replied.message_id)
+        str(replied.id)
     )
     if not os.path.isdir(_t):
         os.makedirs(_t)
