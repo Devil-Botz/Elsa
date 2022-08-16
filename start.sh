@@ -8,5 +8,5 @@ else
 fi
 cd /Elsa
 pip3 install -U -r requirements.txt
-echo "𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙀𝙡𝙨𝙖-𝙑𝟑....🧞‍♂️"
+echo "𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙀𝙡𝙨𝙖....🧞‍♂️"
 python3 bot.py
