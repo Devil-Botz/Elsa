@@ -760,6 +760,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Welcome', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ Yes' if settings["welcome"] else '❌ No',
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
+                ],
+                [
+                    InlineKeyboardButton('Auto Delete',
+                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('10 Mins' if settings["auto_delete"] else 'OFF',
+                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -878,23 +884,27 @@ async def auto_filter(client, msg, spoll=False):
         try:
             pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
-            await pic_fi.delete()
+            if settings["auto_delete"]:
+                await asyncio.sleep(600)
+                await pic_fi.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             pic_fil=await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
-            await pic_fil.delete()
+            if settings["auto_delete"]:
+                await asyncio.sleep(600)
+                await pic_fil.delete()
         except Exception as e:
             logger.exception(e)
             no_pic=await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
-            await no_pic.delete()
+            if settings["auto_delete"]:
+                await asyncio.sleep(600)
+                await no_pic.delete()
     else:
         no_fil=await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(600)
-        await no_fil.delete()
+        if settings["auto_delete"]:
+            await asyncio.sleep(600)
+            await no_fil.delete()
     if spoll:
         await msg.message.delete()
 
