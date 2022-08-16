@@ -57,12 +57,10 @@
  Thanks To [Mahesh](https://github.com/Mahesh0253/Media-Search-bot) MediaSearch
 
  Thanks To [Subinps](https://github.com/subinps/Media-Search-bot) AutoFilter & Base repo
-
- Thanks To [DKBOTx](https://github.com/DKBOTx) 2nd Base repo
  
  Thanks To [Joelkb](https://github.com/Joelkb) Collaborator [Error fixed, Add new features]
 
-  Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner 
+ Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner,Add more features 
 
 
 </details>
