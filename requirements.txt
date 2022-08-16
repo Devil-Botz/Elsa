@@ -21,4 +21,4 @@ yt-dlp
 youtube-dl
 youtube_search
 requests
-
+aiohttp==3.7.4
