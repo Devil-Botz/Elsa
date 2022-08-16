@@ -1,5 +1,5 @@
 from pyrogram import (
-    filters, enum
+    filters, enums
 )
 from info import ADMINS, AUTH_USERS
 from plugins.aswin.admin_check import admin_check
