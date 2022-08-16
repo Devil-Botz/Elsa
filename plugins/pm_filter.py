@@ -503,10 +503,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "aswin":
         buttons = [[
              InlineKeyboardButton('Aud-book', callback_data='abook'),
-             InlineKeyboardButton('Covid', callback_data='corona')
+             InlineKeyboardButton('Covid', callback_data='corona'),
+             InlineKeyboardButton('Status', callback_data='stats'),
          ], [
              InlineKeyboardButton('Back', callback_data='help'),
-             InlineKeyboardButton('🔮 Status', callback_data='stats'),
+             InlineKeyboardButton('Repo', url='https://github.com/Devil-Botz/Elsa'),
              InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -540,6 +541,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
+            InlineKeyboardButton('📜 Repo', url='https://github.com/Devil-Botz/Elsa'),
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
