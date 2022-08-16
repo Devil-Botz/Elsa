@@ -481,8 +481,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('G-Trans', callback_data='gtrans'),
             InlineKeyboardButton('T-Graph', callback_data='tele'),
-            InlineKeyboardButton('Next', callback_data='aswin')             
+            InlineKeyboardButton('Next', callback_data='aswin')    
+        ], [
+            InlineKeyboardButton('Back', callback_data='start')      
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
         await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -497,7 +509,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🔮 Status', callback_data='stats'),
              InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
+        )       
+        await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
