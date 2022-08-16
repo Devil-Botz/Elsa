@@ -27,7 +27,7 @@ class evamaria(Client):
             api_id=APP_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
-            parse_mode="enums.ParseMode.HTML,
+            parse_mode=enums.ParseMode.HTML,
             sleep_threshold=60
         )
 
