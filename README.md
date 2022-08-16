@@ -58,7 +58,7 @@
 
  Thanks To [Subinps](https://github.com/subinps/Media-Search-bot) AutoFilter & Base repo
  
- Thanks To [Joelkb](https://github.com/Joelkb) Collaborator [Error fixed, Add new features]
+ Thanks To [Joelkb](https://github.com/Joelkb) Collaborator [Add Redirect feature,Error fixed, Add new features]
 
  Thanks To [Devil-Botz](https://github.com/Devil-Botz) Owner,Add more features 
 
