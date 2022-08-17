@@ -507,7 +507,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Status', callback_data='stats'),
          ], [
              InlineKeyboardButton('Back', callback_data='help'),
-             InlineKeyboardButton('Repo', url='https://github.com/Devil-Botz/Elsa'),
+             InlineKeyboardButton('Deploy', callback_data='deploy'),
              InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -673,6 +673,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOOK_TXT,
             disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "deploy":
+        buttons = [[
+           InlineKeyboardButton('Repo', url='https://github.com/Devil-Botz/Elsa'),
+           InlineKeyboardButton('Owner', url='https://t.me/Aswin_pm_Bot')
+        ], [
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DEPLOY_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
