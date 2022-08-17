@@ -8,7 +8,7 @@
 <a href="https://t.me/cinemala_com1">
   <img src="https://img.shields.io/badge/Join-blue?logo=telegram" width="70">
 
-![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Devil-Botz/Elsa/&title=Repo%20Views)
+[![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Devil-Botz/Elsa/&title=Repo%20Views)
 [![Stars](https://img.shields.io/github/stars/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/stargazers)
 [![Forks](https://img.shields.io/github/forks/Devil-Botz/Elsa?style=flat-square&color=blue)](https://github.com/Devil-Botz/Elsa/fork)
 [![Size](https://img.shields.io/github/repo-size/Devil-Botz/Elsa?style=flat-square&color=red)](https://github.com/Devil-Botz/Elsa)   
