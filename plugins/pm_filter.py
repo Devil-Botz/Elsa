@@ -399,9 +399,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         ]
                     )
                 )
-                await asyncio.sleep(600)
-                await Joel_tgx.delete()
-                await file_send.delete()
+                if settings['auto_delete']:
+                    await asyncio.sleep(600)
+                    await Joel_tgx.delete()
+                    await file_send.delete()
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
