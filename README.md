@@ -14,8 +14,6 @@
 [![Open Source happy ](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Devil-Botz/Elsa)   
 [![Contributors](https://img.shields.io/github/contributors/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/graphs/contributors)
 
-![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Devil-Botz/Elsa/&title=Repo%20Views)
-
 ## New_feature
 
 - [x] 2GB+File Support
