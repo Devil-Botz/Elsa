@@ -143,7 +143,7 @@ To Get Sticker ID
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
-    JSON_TXT ="""<b>JSON:</b>
+    JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
 <b>Features:</b>
 Message Editting JSON
