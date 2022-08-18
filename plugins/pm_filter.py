@@ -507,7 +507,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Covid', callback_data='corona'),
              InlineKeyboardButton('Status', callback_data='stats')
          ], [
-             InlineKeyboardButton('ping', callback_data='pings')
+             InlineKeyboardButton('Ping', callback_data='pings'),
+             InlineKeyboardButton('Sticker-ID', callback_data='sticker')
          ], [
              InlineKeyboardButton('Back', callback_data='help'),
              InlineKeyboardButton('Deploy', callback_data='deploy'),
@@ -689,6 +690,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.DEPLOY_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "sticker":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.STICKER_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
