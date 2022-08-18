@@ -588,9 +588,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Jsone', callback_data='json'),
              InlineKeyboardButton('Sticker-ID', callback_data='sticker')
          ], [
-             InlineKeyboardButton('Back', callback_data='help'),
-             InlineKeyboardButton('Deploy', callback_data='deploy'),
-             InlineKeyboardButton('🏠 Home', callback_data='start')
+             InlineKeyboardButton('URL-Short', callback_data='urlshort'),
+             InlineKeyboardButton('Next', callback_data='aswins')           
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -606,6 +605,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "aswins":
+        buttons = [[
+             InlineKeyboardButton('Back', callback_data='help'),
+             InlineKeyboardButton('Deploy', callback_data='deploy'),
+             InlineKeyboardButton('🏠 Home', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="▣ ▢ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▢"
+        )
+        await query.message.edit_text(
+            text="▣ ▣ ▣"
         )
     elif query.data == "about":
         buttons = [[
@@ -799,6 +814,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.JSON_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "urlshort":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORT_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
