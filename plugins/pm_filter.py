@@ -521,6 +521,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Status', callback_data='stats')
          ], [
              InlineKeyboardButton('Ping', callback_data='pings'),
+             InlineKeyboardButton('Jsone', callback_data='json'),
              InlineKeyboardButton('Sticker-ID', callback_data='sticker')
          ], [
              InlineKeyboardButton('Back', callback_data='help'),
@@ -724,6 +725,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.PINGS_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "json":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.JSON_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
