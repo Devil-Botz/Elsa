@@ -588,6 +588,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Jsone', callback_data='json'),
              InlineKeyboardButton('Sticker-ID', callback_data='sticker')
          ], [
+             InlineKeyboardButton('Whois', callback_data='whois'),
              InlineKeyboardButton('URL-Short', callback_data='urlshort'),
              InlineKeyboardButton('Next', callback_data='aswins')  
         ], [
@@ -834,6 +835,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "whois":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.WHOIS_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML'
         )
     elif query.data == "stats":
         buttons = [[
