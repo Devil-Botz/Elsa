@@ -133,6 +133,14 @@ Helps you to know your ping 🚶🏼‍♂️
 • This commands can be used in pms and groups
 • This commands can be used buy everyone in the groups and bots pm
 • Share us for more features"""
+ 
+    STICKER_TXT = """<b>𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.</b>
+• 𝐔𝐒𝐀𝐆𝐄
+To Get Sticker ID
+ 
+  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+ 
+◉ Reply To Any Sticker [/stickerid]"""
 
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
