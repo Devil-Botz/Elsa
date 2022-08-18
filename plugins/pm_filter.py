@@ -589,7 +589,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('Sticker-ID', callback_data='sticker')
          ], [
              InlineKeyboardButton('URL-Short', callback_data='urlshort'),
-             InlineKeyboardButton('Next', callback_data='aswins')           
+             InlineKeyboardButton('Next', callback_data='aswins')  
+        ], [
+            InlineKeyboardButton('Back', callback_data='help')         
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -608,7 +610,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "aswins":
         buttons = [[
-             InlineKeyboardButton('Back', callback_data='help'),
+             InlineKeyboardButton('Back', callback_data='aswin'),
              InlineKeyboardButton('Deploy', callback_data='deploy'),
              InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
