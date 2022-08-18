@@ -1033,7 +1033,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings["auto_delete"]:
             await asyncio.sleep(600)
             await no_fil.delete()
-    except Exception as e:
+        except Exception as e:
             logger.exception(e)
             if settings["auto_ffilter"]:
                 fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
