@@ -152,6 +152,11 @@ Group Support
 <b>Note:</b>
 <b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
 
+    WHOIS_TXT ="""<b>WHOIS MODULE</b>
+Note:- <b>Give a user details</b>
+
+•/whois :-give a user full details 📑"""
+
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
