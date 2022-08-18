@@ -143,6 +143,15 @@ To Get Sticker ID
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
+    JSON_TXT ="""<b>JSON:</b>
+Bot returns json for all replied messages with /json or /js
+<b>Features:</b>
+Message Editting JSON
+Pm Support
+Group Support
+<b>Note:</b>
+<b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
+
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
