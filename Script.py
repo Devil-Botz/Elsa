@@ -149,8 +149,10 @@ To Get Sticker ID
     FONT_TXT= """𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
  ⚙️ 𝐔𝐒𝐀𝐆𝐄
 
- <b>COMMAND</b> : /font your text
+ <b>COMMAND</b> : /font your text (optional)
         <b> Eg:- /font Hello</b>
+
+<b><i>OR JUST TYPE WORDS OR SENTENCE IN THE BOT PM</i></b>
 
  <i>This feature added by @cinemala_com</b>"""
     JSON_TXT = """<b>JSON:</b>
