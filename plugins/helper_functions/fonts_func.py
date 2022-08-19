@@ -196,7 +196,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
- def bold_cool(text):
+  def bold_cool(text):
         style = {
             'a': '𝒂',
             'b': '𝒃',
