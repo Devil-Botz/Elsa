@@ -28,5 +28,4 @@ telegraph
 PyPDF2
 ujson
 pyshorteners
-CountryInfo
 countryinfo
