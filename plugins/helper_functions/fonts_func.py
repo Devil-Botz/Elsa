@@ -58,7 +58,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-  def outline(text):
+    def outline(text):
         style = {
             'a': '𝕒',
             'b': '𝕓',
