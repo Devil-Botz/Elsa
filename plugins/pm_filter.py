@@ -582,7 +582,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
              InlineKeyboardButton('Aud-book', callback_data='abook'),
              InlineKeyboardButton('Covid', callback_data='corona'),
-             InlineKeyboardButton('Status', callback_data='stats')
+             InlineKeyboardButton('Fun', callback_data='fun')
          ], [
              InlineKeyboardButton('Ping', callback_data='pings'),
              InlineKeyboardButton('Jsone', callback_data='json'),
@@ -634,7 +634,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/cinemala_com1'),
+            InlineKeyboardButton('📉 Status', callback_data='stats'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -855,6 +855,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.FONT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "fun":
+        buttons = [[
+            InlineKeyboardButton('back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FUN_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
