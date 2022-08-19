@@ -4,13 +4,13 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @Client.on_message(filters.command(["country"]))
-async def countryinfo(bot, update):
-    
-    country = CountryInfo(update.text)
-    
-    info = f"""**Country Information**
+async def country_info(update: Message):
+    country = update.text.split(" ", 1)[1]
+    country = CountryInfo(country)
+    info = f"""--**Country Information**--
 
 Name : ```{country.name()}```
+Native Name : ```{country.native_name()}```
 Capital : ```{country.capital()}```
 Population : ```{country.population()}```
 Region : ```{country.region()}```
