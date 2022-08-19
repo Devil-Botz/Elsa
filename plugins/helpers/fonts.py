@@ -73,11 +73,11 @@ async def nxt(c, m):
             ],[
             InlineKeyboardButton('⬅️ Back', callback_data='nxt+0')
         ]]
-        await m.answer()
-        await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+        if ' ' in update.text:
+        title = update.text.split(" ", 1)[1]
+        await update.reply_text(title, reply_markup=InlineKeyboardMarkup(buttons))
     else:
-        await style_buttons(c, m, cb=True)
-
+        await update.reply_text(text="Ente Any Text Eg `/font [text]`")
 
 @Client.on_callback_query(filters.regex('^style'))
 async def style(c, m):
