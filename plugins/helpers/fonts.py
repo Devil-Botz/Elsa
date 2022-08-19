@@ -2,8 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 
 from plugins.helper_functions.fonts_func import Fonts
 
-@Client.on_message(filters.command("font"))
-async def style_buttons(bot, update, cb=False):
+
+@Client.on_message(filters.private & filters.incoming & filters.text)
+async def style_buttons(c, m, cb=False):
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
         InlineKeyboardButton('𝕆𝕦𝕥𝕝𝕚𝕟𝕖', callback_data='style+outline'),
@@ -23,7 +24,7 @@ async def style_buttons(bot, update, cb=False):
         ],[
         InlineKeyboardButton('𝘚𝘢𝘯𝘴', callback_data='style+slant'),
         InlineKeyboardButton('𝖲𝖺𝗇𝗌', callback_data='style+sim'),
-        InlineKeyboardButton('Ⓒ︎Ⓘ︎Ⓡ︎Ⓒ︎Ⓛ︎Ⓔ︎Ⓢ︎', callback_data='style+circles'),
+         InlineKeyboardButton('Ⓒ︎Ⓘ︎Ⓡ︎Ⓒ︎Ⓛ︎Ⓔ︎Ⓢ︎', callback_data='style+circles'),
         ],[
         InlineKeyboardButton('🅒︎🅘︎🅡︎🅒︎🅛︎🅔︎🅢︎', callback_data='style+circle_dark'),
         InlineKeyboardButton('𝔊𝔬𝔱𝔥𝔦𝔠', callback_data='style+gothic'),
@@ -33,39 +34,55 @@ async def style_buttons(bot, update, cb=False):
         InlineKeyboardButton('H̆̈ă̈p̆̈p̆̈y̆̈', callback_data='style+happy'),
         InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
         ],[
-        InlineKeyboardButton('🇸 🇵 🇪 🇨 🇮 🇦 🇱 ', callback_data='style+special'),
-        InlineKeyboardButton('🅂🅀🅄🄰🅁🄴🅂', callback_data='style+squares'),
-        InlineKeyboardButton('🆂︎🆀︎🆄︎🅰︎🆁︎🅴︎🆂︎', callback_data='style+squares_bold'),
-        ],[
-        InlineKeyboardButton('ꪖꪀᦔꪖꪶꪊᥴ𝓲ꪖ', callback_data='style+andalucia'),
-        InlineKeyboardButton('爪卂几ᘜ卂', callback_data='style+manga'),
-        InlineKeyboardButton('S̾t̾i̾n̾k̾y̾', callback_data='style+stinky'),
-        ],[
-        InlineKeyboardButton('B̥ͦu̥ͦb̥ͦb̥ͦl̥ͦe̥ͦs̥ͦ', callback_data='style+bubbles'),
-        InlineKeyboardButton('U͟n͟d͟e͟r͟l͟i͟n͟e͟', callback_data='style+underline'),
-        InlineKeyboardButton('꒒ꍏꀷꌩꌃꀎꁅ', callback_data='style+ladybug'),
-        ],[
-        InlineKeyboardButton('R҉a҉y҉s҉', callback_data='style+rays'),
-        InlineKeyboardButton('B҈i҈r҈d҈s҈', callback_data='style+birds'),
-        InlineKeyboardButton('S̸l̸a̸s̸h̸', callback_data='style+slash'),
-        ],[
-        InlineKeyboardButton('s⃠t⃠o⃠p⃠', callback_data='style+stop'),
-        InlineKeyboardButton('S̺͆k̺͆y̺͆l̺͆i̺͆n̺͆e̺͆', callback_data='style+skyline'),
-        InlineKeyboardButton('A͎r͎r͎o͎w͎s͎', callback_data='style+arrows'),
-        ],[
-        InlineKeyboardButton('ዪሀክቿነ', callback_data='style+qvnes'),
-        InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
-        InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
-        ]]
-    if ' ' in update.text:
-        title = update.text.split(" ", 1)[1]
-        await update.reply_text(title, reply_markup=InlineKeyboardMarkup(buttons))
+        InlineKeyboardButton('Next ➡️', callback_data="nxt")
+    ]]
+    if not cb:
+        await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
     else:
-        await update.reply_text(text="Ente Any Text Eg `/font [text]`")
+        await m.answer()
+        await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
 
-# @Client.on_callback_query(filters.regex('^style'))
-async def stylishtext(bot, update, style):
-    await update.answer()
+
+@Client.on_callback_query(filters.regex('^nxt'))
+async def nxt(c, m):
+    if m.data == "nxt":
+        buttons = [[
+            InlineKeyboardButton('🇸 🇵 🇪 🇨 🇮 🇦 🇱 ', callback_data='style+special'),
+            InlineKeyboardButton('🅂🅀🅄🄰🅁🄴🅂', callback_data='style+squares'),
+            InlineKeyboardButton('🆂︎🆀︎🆄︎🅰︎🆁︎🅴︎🆂︎', callback_data='style+squares_bold'),
+            ],[
+            InlineKeyboardButton('ꪖꪀᦔꪖꪶꪊᥴ𝓲ꪖ', callback_data='style+andalucia'),
+            InlineKeyboardButton('爪卂几ᘜ卂', callback_data='style+manga'),
+            InlineKeyboardButton('S̾t̾i̾n̾k̾y̾', callback_data='style+stinky'),
+            ],[
+            InlineKeyboardButton('B̥ͦu̥ͦb̥ͦb̥ͦl̥ͦe̥ͦs̥ͦ', callback_data='style+bubbles'),
+            InlineKeyboardButton('U͟n͟d͟e͟r͟l͟i͟n͟e͟', callback_data='style+underline'),
+            InlineKeyboardButton('꒒ꍏꀷꌩꌃꀎꁅ', callback_data='style+ladybug'),
+            ],[
+            InlineKeyboardButton('R҉a҉y҉s҉', callback_data='style+rays'),
+            InlineKeyboardButton('B҈i҈r҈d҈s҈', callback_data='style+birds'),
+            InlineKeyboardButton('S̸l̸a̸s̸h̸', callback_data='style+slash'),
+            ],[
+            InlineKeyboardButton('s⃠t⃠o⃠p⃠', callback_data='style+stop'),
+            InlineKeyboardButton('S̺͆k̺͆y̺͆l̺͆i̺͆n̺͆e̺͆', callback_data='style+skyline'),
+            InlineKeyboardButton('A͎r͎r͎o͎w͎s͎', callback_data='style+arrows'),
+            ],[
+            InlineKeyboardButton('ዪሀክቿነ', callback_data='style+qvnes'),
+            InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
+            InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
+            ],[
+            InlineKeyboardButton('⬅️ Back', callback_data='nxt+0')
+        ]]
+        await m.answer()
+        await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+    else:
+        await style_buttons(c, m, cb=True)
+
+
+@Client.on_callback_query(filters.regex('^style'))
+async def style(c, m):
+    await m.answer()
+    cmd, style = m.data.split('+')
 
     if style == 'typewriter':
         cls = Fonts.typewriter
@@ -145,10 +162,8 @@ async def stylishtext(bot, update, style):
         cls = Fonts.strike
     if style == 'frozen':
         cls = Fonts.frozen
-
-    r, text = update.message.reply_to_message.text.split(None, 1)
-    new_text = cls(text)
+    new_text = cls(m.message.reply_to_message.text)
     try:
-        await update.message.edit_text(new_text, reply_markup=update.message.reply_markup)
+        await m.message.edit_text(new_text, reply_markup=m.message.reply_markup)
     except:
         pass
