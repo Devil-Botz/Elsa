@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(filters.command(["country"]))
 async def country_info(update: Message):
     country = update.text.split(" ", 1)[1]
-    country = CountryInfo(country)
+    
     info = f"""--**Country Information**--
 
 Name : ```{country.name()}```
