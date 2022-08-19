@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from plugins.helper_functions.fonts_func import Fonts
 
 
-@Client.on_message(filters.private & filters.incoming & filters.text)
+@Client.on_message(filters.command("font"))
 async def style_buttons(c, m, cb=False):
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
