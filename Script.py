@@ -146,11 +146,9 @@ To Get Sticker ID
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
-    FONT_TXT= """𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
- ⚙️ 𝐔𝐒𝐀𝐆𝐄
+    FONT_TXT= """⚙️ 𝐔𝐒𝐀𝐆𝐄
 
- <b>COMMAND</b> : /font your text (optional)
-        <b> Eg:- /font Hello</b>
+𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
 
 <b><i>OR JUST TYPE WORDS OR SENTENCE IN THE BOT PM</i></b>
 
