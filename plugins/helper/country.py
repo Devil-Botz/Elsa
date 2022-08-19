@@ -11,7 +11,6 @@ async def countryinfo(bot, update):
     info = f"""**Country Information**
 
 Name : ```{country.name()}```
-Native Name : ```{country.native_name()}```
 Capital : ```{country.capital()}```
 Population : ```{country.population()}```
 Region : ```{country.region()}```
