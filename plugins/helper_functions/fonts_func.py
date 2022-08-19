@@ -127,7 +127,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
     
-      def serief(text):
+    def serief(text):
         style = {
             'a': '𝐚',
             'b': '𝐛',
