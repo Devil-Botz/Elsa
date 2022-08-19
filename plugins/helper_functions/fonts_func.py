@@ -196,7 +196,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-  def bold_cool(text):
+    def bold_cool(text):
         style = {
             'a': '𝒂',
             'b': '𝒃',
@@ -255,7 +255,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-     def cool(text):
+    def cool(text):
         style = {
             'a': '𝑎',
             'b': '𝑏',
@@ -314,7 +314,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
      
- def smallcap(text):
+    def smallcap(text):
         style = {
             'a': 'ᴀ',
             'b': 'ʙ',
@@ -442,7 +442,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
- def bold_script(text):
+    def bold_script(text):
         style = {
             'a': '𝓪',
             'b': '𝓫',
@@ -501,7 +501,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-     def tiny(text):
+    def tiny(text):
         style = {
             'a': 'ᵃ',
             'b': 'ᵇ',
@@ -619,7 +619,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-      def san(text):
+    def san(text):
         style = {
             'a': '𝗮',
             'b': '𝗯',
@@ -688,7 +688,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-def slant_san(text):
+    def slant_san(text):
         style = {
             'a': '𝙖',
             'b': '𝙗',
@@ -747,7 +747,7 @@ def slant_san(text):
             text = text.replace(i, j)
         return text
 
-     def slant(text):
+    def slant(text):
         style = {
             'a': '𝘢',
             'b': '𝘣',
@@ -806,7 +806,7 @@ def slant_san(text):
             text = text.replace(i, j)
         return text
 
-       def sim(text):
+    def sim(text):
         style = {
             'a': '𝖺',
             'b': '𝖻',
@@ -865,7 +865,7 @@ def slant_san(text):
             text = text.replace(i, j)
         return text
 
-     def circles(text):
+    def circles(text):
         style = {
             'a': 'Ⓐ︎',
             'b': 'Ⓑ︎',
@@ -934,7 +934,7 @@ def slant_san(text):
             text = text.replace(i, j)
         return text
 
-def dark_circle(text):
+    def dark_circle(text):
         style = {
             'a': '🅐︎',
             'b': '🅑︎',
