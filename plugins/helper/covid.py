@@ -4,7 +4,7 @@ from requests.utils import requote_uri
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-API = "https://coronavirus-19-api.herokuapp.com/countries"
+API = "https://statistic-covid19.herokuapp.com/countries"
 
 BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data='close_data')]])
 
