@@ -69,7 +69,7 @@
         },
         "FILE_CHANNEL": {
             "description": "File REDIRECT TO , give a Channel id with -100xxxxxxx.",
-            "required": true
+            "required": false
     },
     "addons": [],
     "buildpacks": [{
