@@ -106,14 +106,14 @@ async def give_filter(client,message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("𝚃𝙷𝙰𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄 𝚂𝙸𝚁", show_alert=True)
+        return await query.answer("𝚃𝙷𝙰𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄 𝚂𝙸𝚁\n@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer("𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧\n @ᴄᴄᴏᴍ_ᴛᴇᴀᴍ.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -203,7 +203,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("𝐘𝐨𝐮 𝐚𝐫𝐞 𝐜𝐥𝐢𝐜𝐤𝐢𝐧𝐠 𝐨𝐧 𝐚𝐧 𝐨𝐥𝐝 𝐛𝐮𝐭𝐭𝐨𝐧 𝐰𝐡𝐢𝐜𝐡 𝐢𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝.", show_alert=True)
+        return await query.answer("𝐘𝐨𝐮 𝐚𝐫𝐞 𝐜𝐥𝐢𝐜𝐤𝐢𝐧𝐠 𝐨𝐧 𝐚𝐧 𝐨𝐥𝐝 𝐛𝐮𝐭𝐭𝐨𝐧 𝐰𝐡𝐢𝐜𝐡 𝐢𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝.\n@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
     k = await manual_filters(bot, query.message, text=movie)
@@ -434,7 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             elif settings['botpm']:
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-                await query.answer('𝘾𝙝𝙚𝙘𝙠 𝙋𝙈, 𝙄 𝙝𝙖𝙫𝙚 𝙨𝙚𝙣𝙩 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙥𝙢', show_alert=True)
+                await query.answer('𝘾𝙝𝙚𝙘𝙠 𝙋𝙈, 𝙄 𝙝𝙖𝙫𝙚 𝙨𝙚𝙣𝙩 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙥𝙢\n@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ', show_alert=True)
                 return
             else:
                 file_send=await client.send_cached_media(
@@ -475,7 +475,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒", show_alert=True)
+            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\n@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -549,17 +549,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('¢ιηємαℓα.¢σм')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('M-Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('A-Filter', callback_data='autofilter'),
-            InlineKeyboardButton('Conct', callback_data='coct')
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ_ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ_ғɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
         ], [
-            InlineKeyboardButton('Extra', callback_data='extra'),
-            InlineKeyboardButton('Song', callback_data='song'),
-            InlineKeyboardButton('TTs', callback_data='tts')
+            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
+            InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('ᴛᴛs', callback_data='tts')
         ], [
-            InlineKeyboardButton('G-Trans', callback_data='gtrans'),
-            InlineKeyboardButton('T-Graph', callback_data='tele'),
-            InlineKeyboardButton('Next', callback_data='aswin')    
+            InlineKeyboardButton('ɢ_ᴛʀᴀɴsʟᴀᴛᴇ', callback_data='gtrans'),
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('ɴᴇxᴛ', callback_data='aswin')    
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')      
         ]]
@@ -580,17 +580,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "aswin":
         buttons = [[
-             InlineKeyboardButton('Aud-book', callback_data='abook'),
-             InlineKeyboardButton('Covid', callback_data='corona'),
-             InlineKeyboardButton('Fun', callback_data='fun')
+             InlineKeyboardButton('ᴀᴜᴅɪᴏ_ʙᴏᴏᴋ', callback_data='abook'),
+             InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
+             InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun')
          ], [
-             InlineKeyboardButton('Ping', callback_data='pings'),
-             InlineKeyboardButton('Jsone', callback_data='json'),
-             InlineKeyboardButton('Sticker-ID', callback_data='sticker')
+             InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
+             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
+             InlineKeyboardButton('sᴛɪᴄᴋᴇʀ_ɪᴅ', callback_data='sticker')
          ], [
-             InlineKeyboardButton('Whois', callback_data='whois'),
-             InlineKeyboardButton('URL-Short', callback_data='urlshort'),
-             InlineKeyboardButton('Next', callback_data='aswins')  
+             InlineKeyboardButton('ᴡʜᴏɪs', callback_data='whois'),
+             InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
+             InlineKeyboardButton('ɴᴇxᴛ', callback_data='aswins')  
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')         
         ]]
@@ -611,10 +611,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "aswins":
         buttons = [[
-             InlineKeyboardButton('Font', callback_data='font')
+             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font')
         ],  [
-             InlineKeyboardButton('Back', callback_data='aswin'),
-             InlineKeyboardButton('Deploy', callback_data='deploy'),
+             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin'),
+             InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
              InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -660,7 +660,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('⏹️ Buttons', callback_data='button')
+            InlineKeyboardButton('ʙᴜᴛᴛᴏɴs', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -701,7 +701,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ Admin', callback_data='admin')
+            InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -871,7 +871,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('♻️', callback_data='rfrsh')
+            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -890,7 +890,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("𝙁𝙚𝙩𝙘𝙝𝙞𝙣𝙜 𝙈𝙤𝙣𝙜𝙤𝘿𝙗 𝘿𝙖𝙩𝙖𝘽𝙖𝙨𝙚")
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('♻️', callback_data='rfrsh')
+            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
