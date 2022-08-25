@@ -69,7 +69,7 @@
             "required": false
         },
         "FILE_CHANNEL": {
-            "description": "File REDIRECT TO , give a Channel id with -100xxxxxxx.",
+            "description": "File REDIRECT TO , give Channel id for redirect file eg:-100xxxxxxx.",
             "required": true
         }
     },
