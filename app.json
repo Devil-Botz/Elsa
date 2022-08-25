@@ -1,6 +1,7 @@
 {
     "name": "Elsa Bot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "logo": "https://telegra.ph/file/7b2326f6a4922f1068092.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
