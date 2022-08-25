@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Devil-Botz/EvaMaria",
-    "repository": "https://github.com/Devil-Botz/EvaMaria",
+    "website": "https://github.com/Devil-Botz/Elsa",
+    "repository": "https://github.com/Devil-Botz/Elsa",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
