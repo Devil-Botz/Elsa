@@ -549,16 +549,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('¢ιηємαℓα.¢σм')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ_ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('ᴀᴜᴛᴏ_ғɪʟᴛᴇʀ', callback_data='autofilter'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ', callback_data='autofilter'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
         ], [
             InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
             InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
             InlineKeyboardButton('ᴛᴛs', callback_data='tts')
         ], [
-            InlineKeyboardButton('ɢ_ᴛʀᴀɴsʟᴀᴛᴇ', callback_data='gtrans'),
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video'),
+            InlineKeyboardButton('ᴛ_ɢʀᴀᴘʜ', callback_data='tele'),
             InlineKeyboardButton('ɴᴇxᴛ', callback_data='aswin')    
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')      
@@ -611,7 +611,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "aswins":
         buttons = [[
-             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font')
+             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
+             InlineKeyboardButton('ɢ_ᴛʀᴀɴs', callback_data='gtrans')
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin'),
              InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
@@ -726,6 +727,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SONG_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "video":
+        buttons = [[
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='song')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.VIDEO_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
