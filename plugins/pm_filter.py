@@ -1115,6 +1115,7 @@ async def auto_filter(client, msg, spoll=False):
 
 
 async def advantage_spell_chok(msg):
+    settings = await get_settings(message.chat.id)
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
@@ -1164,8 +1165,13 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("𝙸 𝙲𝙾𝚄𝙻𝙳𝙽'𝚃 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈𝚃𝙷𝙸𝙽𝙶 𝚁𝙴𝙻𝙰𝚃𝙴𝙳 𝚃𝙾 𝚃𝙷𝙰𝚃\n𝙳𝙸𝙳 𝚈𝙾𝚄 𝙼𝙴𝙰𝙽 𝙰𝙽𝚈 𝙾𝙽𝙴 𝙾𝙵 𝚃𝙷𝙴𝚂𝙴?",
-                    reply_markup=InlineKeyboardMarkup(btn))
+    spell_del=await msg.reply_text(
+        text="𝙸 𝙲𝙾𝚄𝙻𝙳𝙽'𝚃 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈𝚃𝙷𝙸𝙽𝙶 𝚁𝙴𝙻𝙰𝚃𝙴𝙳 𝚃𝙾 𝚃𝙷𝙰𝚃\n𝙳𝙸𝙳 𝚈𝙾𝚄 𝙼𝙴𝙰𝙽 𝙰𝙽𝚈 𝙾𝙽𝙴 𝙾𝙵 𝚃𝙷𝙴𝚂𝙴?",
+        reply_markup=InlineKeyboardMarkup(btn)
+    )
+    if settings['auto_delete']:
+        await asyncio.sleep(600)
+        await spell_del.delete()
 
 
 async def manual_filters(client, message, text=False):
