@@ -1170,6 +1170,7 @@ async def advantage_spell_chok(msg):
     )
     await asyncio.sleep(600)
     await spell_del.delete()
+    await msg.message.delete()
 
 
 async def manual_filters(client, message, text=False):
