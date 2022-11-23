@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from plugins.helper_functions.fonts_func import Fonts
 
 
-@Client.on_message(filters.command("font"))
+@Client.on_message(filters.private & filters.command(["font"]))
 async def style_buttons(c, m, cb=False):
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
@@ -24,7 +24,7 @@ async def style_buttons(c, m, cb=False):
         ],[
         InlineKeyboardButton('𝘚𝘢𝘯𝘴', callback_data='style+slant'),
         InlineKeyboardButton('𝖲𝖺𝗇𝗌', callback_data='style+sim'),
-         InlineKeyboardButton('Ⓒ︎Ⓘ︎Ⓡ︎Ⓒ︎Ⓛ︎Ⓔ︎Ⓢ︎', callback_data='style+circles'),
+        InlineKeyboardButton('Ⓒ︎Ⓘ︎Ⓡ︎Ⓒ︎Ⓛ︎Ⓔ︎Ⓢ︎', callback_data='style+circles')
         ],[
         InlineKeyboardButton('🅒︎🅘︎🅡︎🅒︎🅛︎🅔︎🅢︎', callback_data='style+circle_dark'),
         InlineKeyboardButton('𝔊𝔬𝔱𝔥𝔦𝔠', callback_data='style+gothic'),
@@ -37,7 +37,11 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('Next ➡️', callback_data="nxt")
     ]]
     if not cb:
-        await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
+        if ' ' in m.text:
+            title = m.text.split(" ", 1)[1]
+            await m.reply_text(title, reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=m.id)                     
+        else:
+            await m.reply_text(text="Ente Any Text Eg:- `/font [text]`")    
     else:
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
@@ -71,8 +75,7 @@ async def nxt(c, m):
             InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
             InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
             ],[
-            InlineKeyboardButton('⬅️ Back', callback_data='nxt+0'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⬅️ Back', callback_data='nxt+0')
         ]]
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
@@ -162,8 +165,10 @@ async def style(c, m):
         cls = Fonts.strike
     if style == 'frozen':
         cls = Fonts.frozen
-    new_text = cls(m.message.reply_to_message.text)
+
+    r, oldtxt = m.message.reply_to_message.text.split(None, 1) 
+    new_text = cls(oldtxt)            
     try:
-        await m.message.edit_text(new_text, reply_markup=m.message.reply_markup)
-    except:
-        pass
+        await m.message.edit_text(f"`{new_text}`\n\n👆 Click To Copy", reply_markup=m.message.reply_markup)
+    except Exception as e:
+        print(e)
