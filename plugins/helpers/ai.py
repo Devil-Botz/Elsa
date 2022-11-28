@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import *
 from pymongo import MongoClient
+from info import API_ID, API_HASH, BOT_TOKEN, DATABASE_URI, KUKI_API, ERROR_LOG
 import requests
 import os
 import re
