@@ -84,11 +84,11 @@ async def kukiai(client: Client, message: Message):
    is_kuki = kuki.find_one({"chat_id": message.chat.id})
    if is_kuki:
        if message.reply_to_message:      
-           botget = await bot.get_me()
-           botid = botget.id
-           if not message.reply_to_message.from_user.id == botid:
+           Clientget = await Client.get_me()
+           Clientid = Clientget.id
+           if not message.reply_to_message.from_user.id == Clientid:
                return
-           await bot.send_chat_action(message.chat.id, "typing")
+           await Client.send_chat_action(message.chat.id, "typing")
            if not message.text:
                msg = "/"
            else:
@@ -100,9 +100,9 @@ async def kukiai(client: Client, message: Message):
            except Exception as e:
                error = str(e)
            await message.reply_text(x)
-           await bot.send_message(
+           await Client.send_message(
            ERROR_LOG, f"""{error}""")
-           await bot.send_chat_action(message.chat.id, "cencel") 
+           await Client.send_chat_action(message.chat.id, "cancel") 
    
 
 
@@ -113,7 +113,7 @@ async def kukiai(client: Client, message: Message):
     & ~filters.bot
 )
 async def kukiai(client: Client, message: Message):
-    await bot.send_chat_action(message.chat.id, "typing")
+    await Client.send_chat_action(message.chat.id, "typing")
     if not message.text:
         msg = "/"
     else:
@@ -125,16 +125,16 @@ async def kukiai(client: Client, message: Message):
     except Exception as e:
         ERROR = str(e)
     await message.reply_text(x)
-    await bot.send_message(
+    await Client.send_message(
            ERROR_LOG, f"""{ERROR}""")
-    await bot.send_chat_action(message.chat.id, "cancel")
+    await Client.send_chat_action(message.chat.id, "cancel")
 
 
 
 @Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
 async def kukiai(client: Client, message: Message):
-    await bot.send_chat_action(message.chat.id, "typing")
+    await Client.send_chat_action(message.chat.id, "typing")
     if not message.text:
         msg = "/"
     else:
@@ -145,6 +145,6 @@ async def kukiai(client: Client, message: Message):
         await asyncio.sleep(1)
     except Exception as e:
         ERROR = str(e)
-    await bot.send_message(
+    await Client.send_message(
            ERROR_LOG, f"""{ERROR}""")
     await message.reply_text(x)
