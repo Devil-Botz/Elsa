@@ -29,3 +29,9 @@ PyPDF2
 ujson
 pyshorteners
 countryinfo
+future==0.16.0
+wikipedia==1.4.0
+urllib3==1.22
+chardet==3.0.4
+idna==2.6
+certifi==2017.11.5
