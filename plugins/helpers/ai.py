@@ -162,41 +162,6 @@ async def kukiai(client: Client, message: Message):
 
 
 
-@bot.on_message(filters.command(["on"], prefixes=["/", "!"]))
-async def start(client, message):
-    self = await bot.get_me()
-    busername = self.username
-    if message.chat.type != "private":
-        buttons = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Click here",
-                url=f"t.me/ElsaAutofilter_bot?on")]])
-        await message.reply("Contact me in PM",
-                            reply_markup=buttons)
-        
-    else:
-        buttons = [[
-                    InlineKeyboardButton("Channel", url="https://t.me/cinemala_com1"),
-                    InlineKeyboardButton("Repo", url="https://github.com/Devil-Botz/Elsa")
-                    ]]
-        Photo = "https://telegra.ph/file/0d7164cd3702a608d72a1.jpg"
-        await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /hlp - Help Commands\n Powered By ©ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", reply_markup=InlineKeyboardMarkup(buttons))
-
-
-
-@bot.on_message(filters.command(["hlp"], prefixes=["/", "!"]))
-async def help(client, message):
-    self = await bot.get_me()
-    busername = self.username
-    if message.chat.type != "private":
-        buttons = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Click here",
-                url=f"t.me/ElsaAutofilter_bot?start=hlp_")]])
-        await message.reply("Contact me in PM",
-                            reply_markup=buttons)
-        
-    else:    
-        await message.reply_text("/on - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active Elsa Chatbot In Group\n/removechat - Disable Elsa Chatbot In Group")
-
 
 
 
