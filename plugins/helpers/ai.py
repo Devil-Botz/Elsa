@@ -167,4 +167,4 @@ async def kukiai(client: Client, message: Message):
 
 
 
-bot.run()
+
