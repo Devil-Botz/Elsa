@@ -41,8 +41,8 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
-KUKI_API = os.environ.get("KUKI_API", None) 
-ERROR_LOG = os.environ.get("ERROR_LOG", None)
+KUKI_API = environ.get("KUKI_API", None) 
+ERROR_LOG = environ.get("ERROR_LOG", None)
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
