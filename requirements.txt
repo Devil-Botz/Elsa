@@ -29,4 +29,3 @@ PyPDF2
 ujson
 pyshorteners
 countryinfo
-dnspython
