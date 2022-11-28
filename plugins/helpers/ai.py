@@ -18,7 +18,7 @@ async def is_admins(chat_id: int):
     ]
 
 
-@bot.on_message(
+@Client.on_message(
     filters.command("setupchat", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def addchat(_, message): 
@@ -42,7 +42,7 @@ async def addchat(_, message):
         await message.reply_text(f"Already Setup Kuki Chatbot of this Group Is @{message.chat.username}")
 
 
-@bot.on_message(
+@Client.on_message(
     filters.command("removechat", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def rmchat(_, message): 
@@ -69,7 +69,7 @@ async def rmchat(_, message):
 
 
 
-@bot.on_message(
+@Client.on_message(
     filters.text
     & filters.reply
     & ~filters.private
@@ -108,7 +108,7 @@ async def kukiai(client: Client, message: Message):
    
 
 
-@bot.on_message(
+@Client.on_message(
     filters.text
     & filters.reply
     & filters.private
@@ -135,7 +135,7 @@ async def kukiai(client: Client, message: Message):
 
 
 
-@bot.on_message(
+@Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
 async def kukiai(client: Client, message: Message):
     await bot.send_chat_action(message.chat.id, "typing")
