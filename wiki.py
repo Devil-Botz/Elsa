@@ -38,7 +38,7 @@ def make_wiki_query(wiki_results):
         return make_wiki_query(e.options)
 
 
-def get_search_results(search):
+def get_search_results(text):
     wiki_results = wikipedia.search(search, results=4)
     if not wiki_results:
         raise BotError(message='Empty search results')
@@ -53,10 +53,10 @@ def get_search_results(search):
     }
 
 
-def start(bot, update):
+def strt(bot, update):
     bot.send_message(
         chat_id=update.message.chat_id,
-        text="Wikipedia bot! Type /search %query%"
+        text="Wikipedia bot! Type /text %query%"
     )
 
 
@@ -152,7 +152,7 @@ def main():
 
     updater = Updater(token=bot_token)
     dispatcher = updater.dispatcher
-    dispatcher.add_handler(CommandHandler('start', start))
+    dispatcher.add_handler(CommandHandler('strt', start))
     dispatcher.add_handler(MessageHandler(Filters.text, initial_search))
     dispatcher.add_handler(CallbackQueryHandler(query_update_handler))
     dispatcher.add_error_handler(error_handler)
