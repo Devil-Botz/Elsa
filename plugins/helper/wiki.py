@@ -2,6 +2,7 @@ import os
 import logging
 
 from collections import defaultdict
+from info import BOT_TOKEN
 
 import telegram
 import wikipedia
