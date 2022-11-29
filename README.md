@@ -35,6 +35,15 @@
 - [x] File Store
 - [x] 📂 PM & Channel 
 - [x] Auto delete
+- [x] song video download
+- [x] gfilter
+- [x] group broadcast
+- [x] telegraph
+- [x] games
+- [x] ping
+- [x] pdf convert to voice
+- [x] font
+- [x] translate
 
 ## Variables
 
@@ -47,7 +56,7 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `SUPPORT_CHAT` : @cinemala_com1
+* `SUPPORT_CHAT` : @Elsasupportgp
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 ### Optional Variables
 
@@ -78,12 +87,14 @@ You can deploy this bot anywhere.
 </p>
 
 <summary> Deploy To Okteto </summary>
+<br>
+<p>
 You can deploy to Okteto.
-
+</p>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Botowner/Elsa
+git clone https://github.com/Devil-Botz/Elsa
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -107,9 +118,15 @@ python3 bot.py
 * /info - get user info
 * /id - get tg ids.* /imdb - fetch info from imdb.
 * /users - to get list of my users and ids.
-* /chats - to get list of the my chats and ids* /broadcast - to broadcast a message to all DᵤₗQᵤₑᵣ₂.ₒ users
+* /chats - to get list of the my chats and ids* /broadcast - to broadcast a message to all Elsa users
+* /gfilter - group filter
+* /grp_broadcast - broadcast to all group
+* /song - get song
+* /video - get video
+* /setskip - used in index where indexing a specific number
+* /font - fonts for your text
 ```
-<b>CREATOR » [Aswin](https://t.me/Aswin_pm_Bot)</b>
+<b> 😇CREATOR » [Aswin](https://t.me/Aswin_pm_Bot)</b>
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
