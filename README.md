@@ -84,6 +84,9 @@ You can deploy this bot anywhere.
 </a>
 </p></details>
 
+<details><summary>Deploy To Koyeb</summary>
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Devil-Botz/Elsa&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URI]&env[DATABASE_NAME]&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[IMDB_TEMPLATE]&env[SINGLE_BUTTON]=True&env[AUTH_GROUPS]&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=Elsa)
+</details>
 <details><summary> Deploy To Okteto </summary>
 <br>
 <p>
