@@ -101,6 +101,7 @@ python3 bot.py
 </pre>
 </p>
 </details>
+
 ## Commands
 
 ```
