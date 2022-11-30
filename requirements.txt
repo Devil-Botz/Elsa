@@ -29,3 +29,5 @@ PyPDF2
 ujson
 pyshorteners
 countryinfo
+datetime
+pytz
