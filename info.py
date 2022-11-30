@@ -1,6 +1,8 @@
 import re
 from os import environ
 from pyrogram import enums
+from Script import script
+
 import asyncio
 import json
 from collections import defaultdict
@@ -85,7 +87,7 @@ IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🔖 <b>ᴛɪᴛʟᴇ</b> :<a href={url}>{title}</a>\n\n🎭 <b>ɢᴇɴʀᴇs</b> : {genres}\n🎖 <b>ʀᴀᴛɪɴɢ</b> : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)\n\n📆 <b>ʏᴇᴀʀ</b> : {release_date}\n🗞 <b>ʟᴀɴɢᴜᴀɢᴇ</b> : {languages}\n🌎 <b>ᴄᴏᴜɴᴛʀʏ</b> : {countries}\n\n©Cᴇʟʟᴜʟᴏɪᴅ ")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
