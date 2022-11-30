@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/284dd7da93153f93f0da3.jpg" alt="Elsa">
+  <img src="https://telegra.ph/file/e265ed0a09295c6077f39.jpg" alt="Elsa">
 </p>
 <h1 align="center">
   <b>Elsa</b>
@@ -15,7 +15,6 @@
 [![Contributors](https://img.shields.io/github/contributors/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/graphs/contributors)
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Devil-Botz/Elsa/blob/main/LICENSE)
 [![Sparkline](https://stars.medv.io/Devil-Botz/Elsa.svg)](https://stars.medv.io/Devil-Botz/Elsa)
-
 ## Features
 
 - [x] Auto Filter
