@@ -445,7 +445,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔥 Channel 🔥", url = MAIN_CHANNEL)
+                                InlineKeyboardButton("🔥 Channel 🔥", url="https://t.me/cinemala_com1")
                             ]
                         ]
                     )
