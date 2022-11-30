@@ -268,18 +268,14 @@ Elsa
 """
 
     IMDB_TEMPLATE_TXT = """
-Hey {message.from_user.mention},
+🔖 <b>ᴛɪᴛʟᴇ</b> :<a href={url}>{title}</a>
 
-Here is the result for your {query}
+🎭 <b>ɢᴇɴʀᴇs</b> : {genres}
+🎖 <b>ʀᴀᴛɪɴɢ</b> : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
 
-<b>🏷 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
-☀️ Languages : <code>{languages}</code>
-👥 Cast : <code>{cast}</code>
-📀 RunTime: {runtime} Minutes
-📆 Release Info : {release_date}
-🎛 Countries : <code>{countries}</code>
+📆 <b>ʏᴇᴀʀ</b> : {release_date}
+🗞 <b>ʟᴀɴɢᴜᴀɢᴇ</b> : {languages}
+🌎 <b>ᴄᴏᴜɴᴛʀʏ</b> : {countries}
 
-Powered By {message.chat.title} """
+©Cᴇʟʟᴜʟᴏɪᴅ 
+"""
