@@ -76,8 +76,8 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 # Others
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
-MAIN_CHANNEL = environ.get("MAIN_CHANNEL","https://t.me/cinemala_com1")
-FILE_FORWARD = environ.get("FILE_FORWARD","https://t.me/+1dbVg9pA2GphZmI1")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/cinemala_com1")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+1dbVg9pA2GphZmI1")
 MSG_ALRT = environ.get('MSG_ALRT', 'Did You See Anything?')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
