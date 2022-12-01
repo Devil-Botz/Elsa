@@ -198,12 +198,12 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("𝚃𝙷𝙰𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄 𝚂𝙸𝚁", show_alert=True)
+        return await query.answer(script.ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("𝐘𝐨𝐮 𝐚𝐫𝐞 𝐜𝐥𝐢𝐜𝐤𝐢𝐧𝐠 𝐨𝐧 𝐚𝐧 𝐨𝐥𝐝 𝐛𝐮𝐭𝐭𝐨𝐧 𝐰𝐡𝐢𝐜𝐡 𝐢𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝.\n@ᴄᴄᴏᴍ_ᴛᴇᴀᴍ", show_alert=True)
+        return await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
     k = await manual_filters(bot, query.message, text=movie)
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("𝚃𝙷𝙰𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄!!", show_alert=True)
+                await query.answer(script.ALRT_TXT.format(query.from_user.first_name),show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
