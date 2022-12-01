@@ -26,4 +26,4 @@ async def report_user(bot, message):
             except:
                 pass
         if success:
-            await message.reply_text(.script.REPRT_MSG)
+            await message.reply_text(script.REPRT_MSG)
