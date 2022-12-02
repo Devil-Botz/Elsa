@@ -1139,7 +1139,7 @@ async def advantage_spell_chok(client, msg):
     gs_parsed = []
     if not g_s:
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply(script.I_CUDNT.format(message.from_user.mention))
+        k = await msg.reply(script.I_CUDNT.format(u.mention))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1169,7 +1169,7 @@ async def advantage_spell_chok(client, msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply(script.I_CUD_NT.format(message.from_user.mention))
+        k = await msg.reply(script.I_CUD_NT.format(u.mention))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1183,7 +1183,7 @@ async def advantage_spell_chok(client, msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(message.from_user.mention)),
+        caption=(script.CUDNT_FND.format(u.mention)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
 
