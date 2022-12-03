@@ -1185,6 +1185,7 @@ async def advantage_spell_chok(client, msg):
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(reqstr.mention)),
         reply_markup=InlineKeyboardMarkup(btn)
+        buttons = [[ InlineKeyboardButton("🔍 sᴇᴀʀᴄʜ ᴛᴏ ɢᴏᴏɢʟᴇ 🔎", url=f"https://www.google.com/search?q={search}") ],[ InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close") ]]
     )
 
     try:
