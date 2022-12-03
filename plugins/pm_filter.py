@@ -1180,13 +1180,12 @@ async def advantage_spell_chok(client, msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([[ InlineKeyboardButton("🔍 sᴇᴀʀᴄʜ ᴛᴏ ɢᴏᴏɢʟᴇ 🔎", url=f"https://www.google.com/search?q={reply}") ],[InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')]])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(reqstr.mention)),
         reply_markup=InlineKeyboardMarkup(btn)
-        btn = [[ InlineKeyboardButton("🔍 sᴇᴀʀᴄʜ ᴛᴏ ɢᴏᴏɢʟᴇ 🔎", url=f"https://www.google.com/search?q={search}") ],[ InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close") ]]
-    )
+        )
 
     try:
         if settings['auto_delete']:
