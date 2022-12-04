@@ -31,3 +31,4 @@ pyshorteners
 countryinfo
 datetime
 pytz
+dnspython
