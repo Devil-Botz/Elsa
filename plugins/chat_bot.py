@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters 
 from pyrogram.types import *
 from pymongo import MongoClient
@@ -78,11 +77,11 @@ async def kukiai(client: Client, message: Message):
    is_kuki = kuki.find_one({"chat_id": message.chat.id})
    if is_kuki:
        if message.reply_to_message:      
-           botget = await bot.get_me()
+           botget = await client.get_me()
            botid = botget.id
            if not message.reply_to_message.from_user.id == botid:
                return
-           await bot.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, "typing")
            if not message.text:
                msg = "/"
            else:
@@ -94,9 +93,9 @@ async def kukiai(client: Client, message: Message):
            except Exception as e:
                error = str(e)
            await message.reply_text(x)
-           await bot.send_message(
+           await client.send_message(
            ERROR_LOG, f"""{error}""")
-           await bot.send_chat_action(message.chat.id, "cencel") 
+           await client.send_chat_action(message.chat.id, "cencel") 
 
 @Client.on_message(
     filters.text
@@ -106,7 +105,7 @@ async def kukiai(client: Client, message: Message):
     group=2,
 )
 async def kukiai(client: Client, message: Message):
-    await bot.send_chat_action(message.chat.id, "typing")
+    await client.send_chat_action(message.chat.id, "typing")
     if not message.text:
         msg = "/"
     else:
@@ -118,14 +117,14 @@ async def kukiai(client: Client, message: Message):
     except Exception as e:
         ERROR = str(e)
     await message.reply_text(x)
-    await bot.send_message(
+    await client.send_message(
            ERROR_LOG, f"""{ERROR}""")
-    await bot.send_chat_action(message.chat.id, "cancel")
+    await client.send_chat_action(message.chat.id, "cancel")
 
 @Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
 async def kukiai(client: Client, message: Message):
-    await bot.send_chat_action(message.chat.id, "typing")
+    await client.send_chat_action(message.chat.id, "typing")
     if not message.text:
         msg = "/"
     else:
@@ -136,13 +135,13 @@ async def kukiai(client: Client, message: Message):
         await asyncio.sleep(1)
     except Exception as e:
         ERROR = str(e)
-    await bot.send_message(
+    await client.send_message(
            ERROR_LOG, f"""{ERROR}""")
     await message.reply_text(x)
 
 @Client.on_message(filters.command(["start_ai"], prefixes=["/", "!"]))
 async def start(client, message):
-    self = await bot.get_me()
+    self = await client.get_me()
     busername = self.username
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
@@ -161,7 +160,7 @@ async def start(client, message):
 
 @Client.on_message(filters.command(["help"], prefixes=["/", "!"]))
 async def help(client, message):
-    self = await bot.get_me()
+    self = await client.get_me()
     busername = self.username
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
