@@ -181,4 +181,4 @@ async def help(client, message):
     else:    
         await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active Kuki Chatbot In Group\n/removechat - Disable Kuki Chatbot In Group")
 
-bot.run()
+
