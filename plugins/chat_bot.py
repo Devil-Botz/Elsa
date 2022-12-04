@@ -1,4 +1,4 @@
-from pyrogram import Client, filters 
+from pyrogram import Client, filters, enums
 from pyrogram.types import *
 from pymongo import MongoClient
 import requests
@@ -124,7 +124,7 @@ async def kukiai(client: Client, message: Message):
 @Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
 async def kukiai(client: Client, message: Message):
-    await client.send_chat_action(message.chat.id, "typing")
+    await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
     if not message.text:
         msg = "/"
     else:
