@@ -51,6 +51,8 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/2992a480cae2bc0de1c39.jpg h
 NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/7d7cbf0d6c39dc5a05f5a.jpg")
 SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/c0208e04c7af4ac5000f9.jpg")
 MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/b4478b5275a94904d9198.jpg")
+KUKI_API = os.environ.get("KUKI_API", None) 
+ERROR_LOG = os.environ.get("ERROR_LOG", None) 
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
