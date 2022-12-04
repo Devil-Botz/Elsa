@@ -7,12 +7,12 @@ import os
 import re
 
 
-API_ID = os.environ.get("API_ID", None) 
-API_HASH = os.environ.get("API_HASH", None) 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-KUKI_API = os.environ.get("KUKI_API", None) 
-ERROR_LOG = os.environ.get("ERROR_LOG", None) 
-DATABASE_URI = os.environ.get("DATABASE_URI", None)
+API_ID = environ.get("API_ID", None) 
+API_HASH = environ.get("API_HASH", None) 
+BOT_TOKEN = environ.get("BOT_TOKEN", None) 
+KUKI_API = environ.get("KUKI_API", None) 
+ERROR_LOG = environ.get("ERROR_LOG", None) 
+DATABASE_URI = environ.get("DATABASE_URI", None)
 
 
 elsa = Client(
