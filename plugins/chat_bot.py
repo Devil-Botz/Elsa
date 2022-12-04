@@ -5,14 +5,8 @@ from pymongo import MongoClient
 import requests
 import os
 import re
-from info import MONGO_URL, ERROR_LOG, KUKI_API, BOT_TOKEN, API_HASH, API_ID
+from info import MONGO_URL, ERROR_LOG, KUKI_API
 
-bot = Client(
-    "KukiBot" ,
-    api_id = API_ID,
-    api_hash = API_HASH ,
-    bot_token = BOT_TOKEN
-)
 
 async def is_admins(chat_id: int):
     return [
