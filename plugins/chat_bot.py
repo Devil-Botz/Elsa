@@ -72,8 +72,7 @@ async def rmchat(_, message):
     filters.text
     & filters.reply
     & ~filters.private
-    & ~filters.bot
-    & ~filters.edited,
+    & ~filters.bot,
     group=2,
 )
 async def kukiai(client: Client, message: Message):
@@ -109,8 +108,7 @@ async def kukiai(client: Client, message: Message):
     filters.text
     & filters.reply
     & filters.private
-    & ~filters.bot
-    & ~filters.edited,
+    & ~filters.bot,
     group=2,
 )
 async def kukiai(client: Client, message: Message):
