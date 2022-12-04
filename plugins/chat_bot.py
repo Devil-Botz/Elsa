@@ -158,7 +158,7 @@ async def start(client, message):
         Photo = "https://telegra.ph/file/b04509cc8486f23690bba.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @MetaVoid", reply_markup=InlineKeyboardMarkup(buttons))
 
-@Client.on_message(filters.command(["help"], prefixes=["/", "!"]))
+@Client.on_message(filters.command(["help_ai"], prefixes=["/", "!"]))
 async def help(client, message):
     self = await client.get_me()
     busername = self.username
