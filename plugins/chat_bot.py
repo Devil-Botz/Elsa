@@ -1,5 +1,5 @@
 
-from pyrogram import Client, filters
+from pyrogram import filters, Client as bot
 from pyrogram.types import *
 from pymongo import MongoClient
 import requests
