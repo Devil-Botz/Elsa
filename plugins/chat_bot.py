@@ -133,11 +133,11 @@ async def kukiai(client: Client, message: Message):
         x = requests.get(f"https://kukiapi.xyz/api/apikey={KUKI_API}/message={msg}").json()
         x = x['reply']
         await asyncio.sleep(1)
+        await message.reply_text(x)
     except Exception as e:
         ERROR = str(e)
-    await client.send_message(
+        await client.send_message(
            ERROR_LOG, f"""{ERROR}""")
-    await message.reply_text(x)
 
 @Client.on_message(filters.command(["start_ai"], prefixes=["/", "!"]))
 async def start(client, message):
