@@ -1,5 +1,5 @@
 
-from pyrogram import filters, Client as bot
+from pyrogram import Client, filters 
 from pyrogram.types import *
 from pymongo import MongoClient
 import requests
@@ -16,7 +16,7 @@ async def is_admins(chat_id: int):
         )
     ]
 
-@bot.on_message(
+@Client.on_message(
     filters.command("setupchat", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def addchat(_, message): 
@@ -39,7 +39,7 @@ async def addchat(_, message):
     else:
         await message.reply_text(f"Already Setup Kuki Chatbot of this Group Is @{message.chat.username}")
 
-@bot.on_message(
+@Client.on_message(
     filters.command("removechat", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def rmchat(_, message): 
@@ -62,7 +62,7 @@ async def rmchat(_, message):
         kuki.delete_one({"chat_id": message.chat.id})
         await message.reply_text("✅ | Kuki Chatbot is disable!")
 
-@bot.on_message(
+@Client.on_message(
     filters.text
     & filters.reply
     & ~filters.private
@@ -98,7 +98,7 @@ async def kukiai(client: Client, message: Message):
            ERROR_LOG, f"""{error}""")
            await bot.send_chat_action(message.chat.id, "cencel") 
 
-@bot.on_message(
+@Client.on_message(
     filters.text
     & filters.reply
     & filters.private
@@ -122,7 +122,7 @@ async def kukiai(client: Client, message: Message):
            ERROR_LOG, f"""{ERROR}""")
     await bot.send_chat_action(message.chat.id, "cancel")
 
-@bot.on_message(
+@Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
 async def kukiai(client: Client, message: Message):
     await bot.send_chat_action(message.chat.id, "typing")
@@ -140,7 +140,7 @@ async def kukiai(client: Client, message: Message):
            ERROR_LOG, f"""{ERROR}""")
     await message.reply_text(x)
 
-@bot.on_message(filters.command(["start_ai"], prefixes=["/", "!"]))
+@Client.on_message(filters.command(["start_ai"], prefixes=["/", "!"]))
 async def start(client, message):
     self = await bot.get_me()
     busername = self.username
@@ -159,7 +159,7 @@ async def start(client, message):
         Photo = "https://telegra.ph/file/b04509cc8486f23690bba.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n Powered By @MetaVoid", reply_markup=InlineKeyboardMarkup(buttons))
 
-@bot.on_message(filters.command(["help"], prefixes=["/", "!"]))
+@Client.on_message(filters.command(["help"], prefixes=["/", "!"]))
 async def help(client, message):
     self = await bot.get_me()
     busername = self.username
