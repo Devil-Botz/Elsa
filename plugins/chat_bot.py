@@ -7,11 +7,11 @@ import re
 from info import MONGO_URL, ERROR_LOG, KUKI_API
 
 
-async def is_admins(chat_id: int):
+async def is_admins(cht_id: int):
     return [
         member.user.id
         async for member in Client.get_chat_members(
-            chat_id, filter=enums.ChatMembersFilter.ADMINISTRATORS
+            chat_id=cht_id, filter=enums.ChatMembersFilter.ADMINISTRATORS
         )
     ]
 
