@@ -10,8 +10,8 @@ from info import MONGO_URL, ERROR_LOG, KUKI_API
 async def is_admins(chat_id: int):
     return [
         member.user.id
-        async for member in Client.iter_chat_members(
-            chat_id, filter="administrators"
+        async for member in Client.get_chat_members(
+            chat_id, filter=enums.ChatMembersFilter.ADMINISTRATORS
         )
     ]
 
@@ -90,12 +90,12 @@ async def kukiai(client: Client, message: Message):
                x = requests.get(f"https://kukiapi.xyz/api/apikey={KUKI_API}/message={msg}").json()
                x = x['reply']
                await asyncio.sleep(1)
+               await message.reply_text(x)
            except Exception as e:
                error = str(e)
-           await message.reply_text(x)
-           await client.send_message(
-           ERROR_LOG, f"""{error}""")
-           await client.send_chat_action(message.chat.id, "cencel") 
+               await client.send_message(
+               ERROR_LOG, f"""{error}""")
+               await client.send_chat_action(message.chat.id, enums.ChatAction.CANCEL) 
 
 @Client.on_message(
     filters.text
@@ -114,12 +114,12 @@ async def kukiai(client: Client, message: Message):
         x = requests.get(f"https://kukiapi.xyz/api/apikey={KUKI_API}/message={msg}").json()
         x = x['reply']
         await asyncio.sleep(1)
+        await message.reply_text(x)
     except Exception as e:
         ERROR = str(e)
-    await message.reply_text(x)
-    await client.send_message(
+        await client.send_message(
            ERROR_LOG, f"""{ERROR}""")
-    await client.send_chat_action(message.chat.id, "cancel")
+        await client.send_chat_action(message.chat.id, enums.ChatAction.CANCEL) 
 
 @Client.on_message(
     filters.command("chat", prefixes=["/", ".", "?", "-"]))
@@ -138,6 +138,7 @@ async def kukiai(client: Client, message: Message):
         ERROR = str(e)
         await client.send_message(
            ERROR_LOG, f"""{ERROR}""")
+        await client.send_chat_action(message.chat.id, enums.ChatAction.CANCEL) 
 
 @Client.on_message(filters.command(["start_ai"], prefixes=["/", "!"]))
 async def start(client, message):
