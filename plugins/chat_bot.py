@@ -91,7 +91,7 @@ async def Logicai(client: Client, message: Message):
        Logic = Logicdb["LogicDb"]["Logic"] 
        is_Logic = Logic.find_one({"chat_id": message.chat.id})
        if not is_Logic:
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.text})  
            k = chatai.find_one({"word": message.text})      
@@ -114,7 +114,7 @@ async def Logicai(client: Client, message: Message):
        bot_id = getme.id                             
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_Logic:                   
-               await client.send_chat_action(message.chat.id, "typing")
+               await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -157,7 +157,7 @@ async def Logicstickerai(client: Client, message: Message):
        Logic = Logicdb["LogicDb"]["Logic"] 
        is_Logic = Logic.find_one({"chat_id": message.chat.id})
        if not is_Logic:
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})      
            k = chatai.find_one({"word": message.text})      
@@ -180,7 +180,7 @@ async def Logicstickerai(client: Client, message: Message):
        bot_id = getme.id
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_Logic:                    
-               await client.send_chat_action(message.chat.id, "typing")
+               await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -230,7 +230,7 @@ async def Logicai(client: Client, message: Message):
        Logic = Logicdb["LogicDb"]["Logic"] 
        is_Logic = Logic.find_one({"chat_id": message.chat.id})
        if not is_Logic:
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.text})  
            k = chatai.find_one({"word": message.text})      
@@ -253,7 +253,7 @@ async def Logicai(client: Client, message: Message):
        bot_id = getme.id                             
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_Logic:                   
-               await client.send_chat_action(message.chat.id, "typing")
+               await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -296,7 +296,7 @@ async def Logicstickerai(client: Client, message: Message):
        Logic = Logicdb["LogicDb"]["Logic"] 
        is_Logic = Logic.find_one({"chat_id": message.chat.id})
        if not is_Logic:
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})      
            k = chatai.find_one({"word": message.text})      
@@ -319,7 +319,7 @@ async def Logicstickerai(client: Client, message: Message):
        bot_id = getme.id
        if message.reply_to_message.from_user.id == bot_id: 
            if not is_Logic:                    
-               await client.send_chat_action(message.chat.id, "typing")
+               await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
                K = []  
                is_chat = chatai.find({"word": message.text})
                k = chatai.find_one({"word": message.text})      
@@ -357,7 +357,7 @@ async def Logicprivate(client: Client, message: Message):
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"]
    if not message.reply_to_message: 
-       await client.send_chat_action(message.chat.id, "typing")
+       await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
        K = []  
        is_chat = chatai.find({"word": message.text})                 
        for x in is_chat:
@@ -373,7 +373,7 @@ async def Logicprivate(client: Client, message: Message):
        getme = await client.get_me()
        bot_id = getme.id       
        if message.reply_to_message.from_user.id == bot_id:                    
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.text})                 
            for x in is_chat:
@@ -400,7 +400,7 @@ async def Logicprivatesticker(client: Client, message: Message):
    chatdb = MongoClient(MONGO_URL)
    chatai = chatdb["Word"]["WordDb"] 
    if not message.reply_to_message:
-       await client.send_chat_action(message.chat.id, "typing")
+       await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
        K = []  
        is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
        for x in is_chat:
@@ -416,7 +416,7 @@ async def Logicprivatesticker(client: Client, message: Message):
        getme = await client.get_me()
        bot_id = getme.id       
        if message.reply_to_message.from_user.id == bot_id:                    
-           await client.send_chat_action(message.chat.id, "typing")
+           await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
            for x in is_chat:
