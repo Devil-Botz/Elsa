@@ -9,7 +9,7 @@ from info import MONGO_URL
 async def is_admins(cht_id: int):
     return [
         member.user.id
-        async for member in get_chat_members(
+        async for member in Client.get_chat_members(
             chat_id=cht_id, filter=enums.ChatMembersFilter.ADMINISTRATORS
         )
     ]
