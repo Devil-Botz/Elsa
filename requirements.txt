@@ -31,3 +31,4 @@ countryinfo
 datetime
 pytz
 dnspython
+aiohttp
