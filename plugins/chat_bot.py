@@ -16,7 +16,7 @@ async def is_admins(cht_id: int):
     ]
 
 
-@Client.on_message(filters.command("start_ai"))
+@Client.on_message(filters.command("start_ai")&~filters.private)
 async def start(client, message):
         await message.reply_text("Hi! My name is [ELSA](https://t.me/cinemala_com1). I'm an Artificial Intelligence")
 
