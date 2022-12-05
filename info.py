@@ -82,7 +82,7 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 # Others
-PORT = environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/Elsasupportgp")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/cinemala_com1")
