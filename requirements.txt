@@ -35,4 +35,4 @@ aiohttp
 python-math
 Pillow
 speedtest-cli
-sys.executable
+
