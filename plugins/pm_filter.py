@@ -615,7 +615,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "aswins":
         buttons = [[
              InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
-             InlineKeyboardButton('ɢ_ᴛʀᴀɴs', callback_data='gtrans')
+             InlineKeyboardButton('ɢ_ᴛʀᴀɴs', callback_data='gtrans'),
+             InlineKeyboardButton('ᴄᴀʀʙᴏɴ', callback_data='carb'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin'),
              InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
@@ -869,6 +870,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.FONT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "carb":
+        buttons = [[
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswins')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CARB_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
