@@ -56,7 +56,7 @@
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * `SUPPORT_CHAT` : @Elsasupportgp
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* `FILE_CHANNEL' : File redirect to channel
+* `FILE_CHANNEL` : File redirect to channel
 ### Optional Variables
 
 ## Credits
