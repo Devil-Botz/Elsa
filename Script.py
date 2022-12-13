@@ -288,6 +288,16 @@ Elsa
 ©Cᴇʟʟᴜʟᴏɪᴅ 
 """
 
+    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+
+
+
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+▫️<a href=https://t.me/cinemala_com1> ᴄʜᴀɴɴᴇʟ </a>
+
+▫️<a href=https://t.me/Elsasupportgp> sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </a>
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
+
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 📅 Dᴀᴛᴇ : <code>{}</code>
