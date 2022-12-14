@@ -276,16 +276,16 @@ Elsa
 """
 
     IMDB_TEMPLATE_TXT = """
-🔖 <b>ᴛɪᴛʟᴇ</b> :<a href={url}>{title}</a>
+🔖 <b>ᴛɪᴛʟᴇ :<a href={url}>{title}</a>
 
-🎭 <b>ɢᴇɴʀᴇs</b> : {genres}
-🎖 <b>ʀᴀᴛɪɴɢ</b> : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
+🎭 ɢᴇɴʀᴇs : {genres}
+🎖 ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
 
-📆 <b>ʏᴇᴀʀ</b> : {release_date}
-🗞 <b>ʟᴀɴɢᴜᴀɢᴇ</b> : {languages}
-🌎 <b>ᴄᴏᴜɴᴛʀʏ</b> : {countries}
+📆 ʏᴇᴀʀ : {release_date}
+🗞 ʟᴀɴɢᴜᴀɢᴇ : {languages}
+🌎 ᴄᴏᴜɴᴛʀʏ : {countries}
 
-©Cᴇʟʟᴜʟᴏɪᴅ 
+©{message.chat.title}</b>
 """
 
     CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
