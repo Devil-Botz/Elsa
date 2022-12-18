@@ -538,3 +538,4 @@ async def deletemultiplefiles(bot, message):
     await message.reply_text(
         text="<b>Select the type of files you want to delete !\n\nThis will delete 100 files from the database for the selected type.</b>",
         reply_markup=InlineKeyboardMarkup(btn)
+    )
