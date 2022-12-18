@@ -42,6 +42,8 @@
 - [x] pdf convert to voice
 - [x] font
 - [x] translate
+- [x] PreDVD and CamRip Delete Mode
+- [x] Multiple File Deletion
 
 ## Variables
 
