@@ -58,7 +58,7 @@
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * `SUPPORT_CHAT` : @Elsasupportgp
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* `FILE_CHANNEL` : File redirect to channel
+* `FILE_FORWARD` : File redirect to channel telegram channel link eg: https://t.me/**************
 * `DELETE_CHANNELS` : you can delete multiple files by forwarding those files into a private channel. Firstly make a private channel, add your bot as admin, add that channel's ID as a variable named DELETE_CHANNELS and forward the files to that private channel and the bot will delete those files from its database. You can check logs to confirm whether the file is deleted from the bot's database or not.
 ### Optional Variables
 
@@ -138,6 +138,7 @@ python3 bot.py
 * /video - get video
 * /setskip - used in index where indexing a specific number
 * /font - fonts for your text
+* /deletefiles - PreDvD CamRip deletion
 ```
 <b> 😇CREATOR » [Aswin](https://t.me/Aswin_pm_Bot)</b>
 
