@@ -544,21 +544,25 @@ async def deletemultiplefiles(bot, message):
 @Client.on_message(filters.command("send") & filters.user(ADMINS))
 async def send_msg(bot, message):
     if message.reply_to_message:
-        target_id = message.text
-        command = ["/send"]
-        for cmd in command:
-            if cmd in target_id:
-                target_id = target_id.replace(cmd, "")
+        target_id = message.text.split(" ", 1)[1]
+        out = "Users Saved In DB Are:\n\n"
         success = False
         try:
-            await message.reply_to_message.copy(target_id)
-            success = True
+            user = await bot.get_users(target_id)
+            users = await db.get_all_users()
+            async for usr in users:
+                out += f"{usr['id']}"
+                out += '\n'
+            if str(user.id) in str(out):
+                await message.reply_to_message.copy(int(user.id))
+                success = True
+            else:
+                success = False
+            if success:
+                await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+            else:
+                await message.reply_text("<b>This user didn't started this bot yet !</b>")
         except Exception as e:
-            await message.reply_text(f"<b>Must give a valid chat id ! \nError: {e}</b>")
-        if success:
-            user = await bot.get_users(int(target_id))
-            await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
-        else:
-            await message.reply_text("<b>An error occurred !</b>")
+            await message.reply_text(f"<b>Error: {e}</b>")
     else:
         await message.reply_text("<b>Use this command as a reply to any message using the target chat id. For eg: /send userid</b>")
