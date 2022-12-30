@@ -539,3 +539,26 @@ async def deletemultiplefiles(bot, message):
         text="<b>Select the type of files you want to delete !\n\nThis will delete 100 files from the database for the selected type.</b>",
         reply_markup=InlineKeyboardMarkup(btn)
     )
+
+
+@Client.on_message(filters.command("send") & filters.user(ADMINS))
+async def send_msg(bot, message):
+    if message.reply_to_message:
+        target_id = message.text
+        command = ["/send"]
+        for cmd in command:
+            if cmd in target_id:
+                target_id = target_id.replace(cmd, "")
+        success = False
+        try:
+            await message.reply_to_message.copy(target_id)
+            success = True
+        except Exception as e:
+            await message.reply_text(f"<b>Must give a valid chat id ! \nError: {e}</b>")
+        if success:
+            user = await bot.get_users(int(target_id))
+            await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+        else:
+            await message.reply_text("<b>An error occurred !</b>")
+    else:
+        await message.reply_text("<b>Use this command as a reply to any message using the target chat id. For eg: /send userid</b>")
