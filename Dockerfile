@@ -9,4 +9,4 @@ RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /Elsa
 WORKDIR /Elsa
 COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+CMD ["/python3", "/bot.py"]
