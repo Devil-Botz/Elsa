@@ -227,9 +227,13 @@ This module only works for my admins
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>
 • /grp_broadcast - <code>to broadcast a message to all groups</code>
-• /gfilter - <code>group filter</code>
-• /setskip - <code>skip no of files before indexing</code>
-• /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>"""
+• /gfilter - <code>To add global filter</code>
+• /gfilters - <code>To view global filters</code>
+• /delallg - <code>To delete all global filters from database</code>
+• /delg - <code>To delete a specific global filter</code>
+• /setskip - <code>Skip no of files before indexing</code>
+• /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>
+• /deletefiles - <code>Delete CamRip and PreDvD files delete from database </code>"""
     
     STATUS_TXT = """<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
@@ -311,23 +315,30 @@ Elsa
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️"""
 
-    ALRT_TXT = """𝚃𝙷𝙰𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄 𝚂𝙸𝚁 @ᴄᴄᴏᴍ_ᴛᴇᴀᴍ"""
+    ALRT_TXT = """ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏʏ ꜱɪʀ"""
 
-    OLD_ALRT_TXT = """𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧 @ᴄᴄᴏᴍ_ᴛᴇᴀᴍ"""
+    OLD_ALRT_TXT = """𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧 """
 
     TOP_ALRT_MSG = """♻️ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
 
-    MVE_NT_FND = """<b>𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴</b> """
+    MVE_NT_FND = """<b>ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ʏᴇᴛ  ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ</b> """
 
     NORSLTS = """★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 𝗜𝗗 <b>: {}</b>
 𝗡𝗮𝗺𝗲 <b>: {}</b>
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    I_CUDNT = """𝑯𝑬𝑳𝑳𝑶 {} 𝑰 𝑪𝑶𝑼𝑳𝑫𝑵'𝑻 𝑭𝑰𝑵𝑫 𝑨𝑵𝒀 𝑴𝑶𝑽𝑰𝑬 𝑰𝑵 𝑻𝑯𝑨𝑻 𝑵𝑨𝑴𝑬 ."""
+    I_CUDNT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇꜱ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ. 
+ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 
+➠ ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ 
+➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ 
+➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ
+➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ 
+ᴇxᴀᴍᴘʟᴇ : ᴋᴀɴᴛᴀʀᴀ 2022 
+🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ' : ( ! , . / )"""
 
-    I_CUD_NT = """𝑯𝑬𝑳𝑳𝑶 {} 𝑰 𝑪𝑶𝑼𝑳𝑫𝑵'𝑻 𝑭𝑰𝑵𝑫 𝑨𝑵𝒀𝑻𝑯𝑰𝑵𝑮 𝑹𝑬𝑳𝑨𝑻𝑬𝑫 𝑻𝑶 𝑻𝑯𝑨𝑻 . 𝑪𝑯𝑬𝑪𝑲 𝒀𝑶𝑼𝑹 𝑺𝑷𝑬𝑳𝑳𝑰𝑵𝑮."""
+    I_CUD_NT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ."""
     
-    CUDNT_FND = """𝑯𝑬𝑳𝑳𝑶 {} 𝑰 𝑪𝑶𝑼𝑳𝑫𝑵'𝑻 𝑭𝑰𝑵𝑫 𝑨𝑵𝒀𝑻𝑯𝑰𝑵𝑮 𝑹𝑬𝑳𝑨𝑻𝑬𝑫 𝑻𝑶 𝑻𝑯𝑨𝑻 𝑫𝑰𝑫 𝒀𝑶𝑼 𝑴𝑬𝑨𝑵 𝑨𝑵𝒀 𝑶𝑵𝑬 𝑶𝑭 𝑻𝑯𝑬𝑺𝑬?"""
-    
+    CUDNT_FND = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
+
     REPRT_MSG = """ Reported To Admin"""
