@@ -106,7 +106,9 @@ You can deploy this bot anywhere.
 <details><summary> Deploy To Scalingo </summary>
 <br>
 <p>
-[![Deploy on Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://dashboard.scalingo.com/create/app?source=https://github.com/Devil-Botz/Elsa#custom_branch)
+<a href="https://dashboard.scalingo.com/create/app?source=https://github.com/Devil-Botz/Elsa#custom_branch">
+   <img src="https://cdn.scalingo.com/deploy/button.svg" alt="Deploy on Scalingo" data-canonical-src="https://cdn.scalingo.com/deploy/button.svg" style="max-width:100%;">
+</a>
 </a>
 </p>
 </details>
