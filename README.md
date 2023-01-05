@@ -103,6 +103,13 @@ You can deploy this bot anywhere.
 </a>
 </p>
 </details>
+<details><summary> Deploy To Scalingo </summary>
+<br>
+<p>
+[![Deploy on Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://dashboard.scalingo.com/create/app?source=https://github.com/Devil-Botz/Elsa#custom_branch)
+</a>
+</p>
+</details>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
