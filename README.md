@@ -106,6 +106,11 @@ You can deploy this bot anywhere.
 <details><summary> Deploy To Scalingo </summary>
 <br>
 [web: python -m http.server $PORT] add in procfile
+[[version: "1"
+services:
+app:
+    build: .]
+Docker-compose]
 <p>
 <a href="https://dashboard.scalingo.com/create/app?source=https://github.com/Devil-Botz/Elsa#custom_branch">
    <img src="https://cdn.scalingo.com/deploy/button.svg" alt="Deploy on Scalingo" data-canonical-src="https://cdn.scalingo.com/deploy/button.svg" style="max-width:100%;">
