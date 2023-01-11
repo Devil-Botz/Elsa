@@ -5,7 +5,7 @@ import os
 from pyrogram import filters, enums, Client 
 from Script import script
 
-@client.on_message((filters.command(["report"]) | filters.regex("@admins") | filters.regex("@admin")) & filters.group)
+@Client.on_message((filters.command(["report"]) | filters.regex("@admins") | filters.regex("@admin")) & filters.group)
 async def report_user(bot, message):
     if message.reply_to_message:
         chat_id = message.chat.id
