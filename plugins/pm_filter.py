@@ -36,7 +36,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 
-@Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
+@Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
       mode_on = ["yes", "on", "true"]
       mode_of = ["no", "off", "false"]
