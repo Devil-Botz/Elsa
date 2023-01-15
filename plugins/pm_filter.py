@@ -505,7 +505,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         await Joel_tgx.delete()
                         await file_send.delete()
             else: #if not, bot shows alert msg
-                await query.answer(f"Hey {query.from_user.mention}, This is not your movie request, Request Your's !")
+                await query.answer(f"Hey {query.from_user.first_name}, This is not your movie request, Request Your's !")
         except UserIsBlocked:
             await query.answer('𝐔𝐧𝐛𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐦𝐚𝐡𝐧 !', show_alert=True)
         except PeerIdInvalid:
