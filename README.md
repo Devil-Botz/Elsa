@@ -12,7 +12,6 @@
     <img src="https://img.shields.io/github/issues/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Issues">
     <img src="https://img.shields.io/github/forks/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Forks">
     <img src="https://img.shields.io/github/stars/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Stars">
-    [![Sparkline](https://stars.medv.io/Devil-Botz/Elsa.svg)](https://stars.medv.io/Devil-Botz/Elsa)
 </p>
 
 ## Features
