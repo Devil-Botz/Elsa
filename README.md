@@ -8,12 +8,14 @@
 <a href="https://t.me/cinemala_com1">
   <img src="https://img.shields.io/badge/Join-blue?logo=telegram" width="70">
 
-[![Stars](https://img.shields.io/github/stars/Devil-Botz/Elsa?style=flat-square&color=yellow)](https://github.com/Devil-Botz/Elsa/stargazers)
-[![Forks](https://img.shields.io/github/forks/Devil-Botz/Elsa?style=flat-square&color=orange)](https://github.com/Devil-Botz/Elsa/fork)
-[![Size](https://img.shields.io/github/repo-size/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Devil-Botz/Elsa)   
-[![Contributors](https://img.shields.io/github/contributors/Devil-Botz/Elsa?style=flat-square&color=green)](https://github.com/Devil-Botz/Elsa/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Devil-Botz/Elsa/blob/main/LICENSE)
+<p align="center">
+    <img src="https://img.shields.io/github/license/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="LICENSE">
+    <img src="https://img.shields.io/github/contributors/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
+    <img src="https://img.shields.io/github/issues/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Issues">
+    <img src="https://img.shields.io/github/forks/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Forks">
+    <img src="https://img.shields.io/github/stars/Devil-Botz/Elsa?style=for-the-badge&logo=appveyor" alt="Stars">
+</p>
 [![Sparkline](https://stars.medv.io/Devil-Botz/Elsa.svg)](https://stars.medv.io/Devil-Botz/Elsa)
 ## Features
 
