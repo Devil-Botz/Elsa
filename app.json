@@ -68,8 +68,8 @@
             "value": "Telegram_files",
             "required": false
         },
-        "FILE_CHANNEL": {
-            "description": "File REDIRECT TO , give Channel id for redirect file eg:-100xxxxxxx.",
+        "FILE_FORWARD": {
+            "description": "File REDIRECT TO Channel , give Channel link for redirect file eg:https://t.me/abcdefgkkjajjm.",
             "required": true
         },
         "DELETE_CHANNELS": {
