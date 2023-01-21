@@ -67,7 +67,7 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-
+support_chat_id = environ.get('SUPPORT_CHAT_ID')
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 
@@ -83,7 +83,13 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
+#url links
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '3a3935e37c74a2384f7a689c414f078ab6320785')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+
 # Others
+SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
