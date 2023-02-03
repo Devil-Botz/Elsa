@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/8330c059b074321e99576.jpg" alt="Devil Botz">
+  <img src="https://telegra.ph/file/930ff28f8e22e70b00cfa.jpg" alt="Devil Botz">
 </p>
 <h1 align="center">
   <b>Elsa</b>
