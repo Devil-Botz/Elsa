@@ -30,7 +30,7 @@ pyshorteners
 countryinfo
 datetime
 pytz
-dnspython
+dnspython==2.3.0
 aiohttp
 python-math
 Pillow
