@@ -35,3 +35,4 @@ aiohttp
 python-math
 Pillow
 speedtest-cli
+dnspython==2.3.0
