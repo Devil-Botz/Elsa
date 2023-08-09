@@ -271,7 +271,11 @@ Elsa
 
 <code>{}</code>
 
-<b>© Powered by {}</b>
+<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+♻️ 𝙅𝙊𝙄𝙉 :- <a href="t.me/oTTGArakalTheravadMovies">OTT UPDATES</a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href="t.me/ARAKAL_THERAVAD_GROUP_LINKS">CHANNEL</a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href="t.me/ARAKAL_THERAVAD_MOVIES">GROUP</a>
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>
 """
     SUR_TXT = """
 <b>
