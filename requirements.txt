@@ -7,6 +7,7 @@ umongo==3.0.1
 requests
 bs4
 git+https://github.com/Joelkb/cinemagoer
+python-dotenv
 Heroku3
 search_engine_parser
 wget
@@ -16,7 +17,7 @@ ffmpeg
 youtube_search
 youtube_search_python
 youtube-search-python==1.4.6
-yt-dlp
+yt-dlp==2023.2.17
 youtube-dl
 youtube_search
 requests
@@ -35,3 +36,4 @@ aiohttp
 python-math
 Pillow
 speedtest-cli
+openai

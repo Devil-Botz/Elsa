@@ -28,8 +28,8 @@ def time_to_seconds(time):
 @Client.on_message(filters.command('song'))
 def song(client, message):
 
-    user_id = message.from_user.id 
-    user_name = message.from_user.first_name 
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
     rpk = "["+user_name+"](tg://user?id="+str(user_id)+")"
 
     query = ''
@@ -42,14 +42,14 @@ def song(client, message):
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
         #print(results)
-        title = results[0]["title"][:40]       
+        title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
 
 
-        performer = f"[Elsa - 𝙲𝙸𝙽𝙴𝙼𝙰𝙻𝙰.𝙲𝙾𝙼™]" 
+        performer = f"[Elsa - 𝙲𝙸𝙽𝙴𝙼𝙰𝙻𝙰.𝙲𝙾𝙼™]"
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
@@ -66,7 +66,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ›› [🍁 ᴄʜᴀɴɴᴇʟ 🍁](https://t.me/cinemala_com1)**\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/CcommusicBot)**\n@𝙲𝙸𝙽𝙴𝙼𝙰𝙻𝙰.𝙲𝙾𝙼**'
+        rep = '**𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ›› [🍁 ᴄʜᴀɴɴᴇʟ 🍁](https://t.me/+1iWSCrpI_083MDM1)**\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/CcommusicBot)**\n@𝙲𝙸𝙽𝙴𝙼𝙰𝙻𝙰.𝙲𝙾𝙼**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -149,8 +149,8 @@ async def vsong(client, message: Message):
         file_name=str(ytdl_data["title"]),
         thumb=sedlyf,
         caption=capy,
-        supports_streaming=True,        
-        reply_to_message_id=message.id 
+        supports_streaming=True,
+        reply_to_message_id=message.id
     )
     await pablo.delete()
     for files in (sedlyf, file_stark):
