@@ -113,7 +113,14 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>Your message has been sent to my moderators !</b>")
+    await message.reply_text("<b>[⚠️𝗝𝘂𝘀𝘁 𝘁𝘆𝗽𝗲 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗻𝗮𝗺𝗲 𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽. 𝗜 𝗰𝗮𝗻 𝗼𝗻𝗹𝘆 𝘄𝗼𝗿𝗸 𝗶𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 ⚠️]
+
+[⚠️ഇവിടെ ചോദിച്ചാൽ സിനിമ കിട്ടില്ല ഗ്രൂപ്പിൽ മാത്രം സിനിമ ചോദിക്കുക ⚠️]
+
+🔰 𝗝 𝗢 𝗜 𝗡 ❗️𝗚 𝗥 𝗢 𝗨 𝗣 🔰 👇
+https://t.me/+oUGIleD44kdlYWM9
+https://t.me/+oUGIleD44kdlYWM9
+https://t.me/+oUGIleD44kdlYWM9</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
