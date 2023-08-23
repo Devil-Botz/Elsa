@@ -118,7 +118,7 @@ async def pm_text(bot, message):
 🔰 𝗝 𝗢 𝗜 𝗡 ❗️𝗚 𝗥 𝗢 𝗨 𝗣 🔰 👇
 https://t.me/+oUGIleD44kdlYWM9
 https://t.me/+oUGIleD44kdlYWM9
-https://t.me/+oUGIleD44kdlYWM9</b>")
+https://t.me/+oUGIleD44kdlYWM9 </b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
