@@ -119,6 +119,7 @@ async def pm_text(bot, message):
 https://t.me/+oUGIleD44kdlYWM9
 https://t.me/+oUGIleD44kdlYWM9
 https://t.me/+oUGIleD44kdlYWM9 </b>")
+                             
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
