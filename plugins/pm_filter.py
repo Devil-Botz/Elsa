@@ -520,7 +520,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                  InlineKeyboardButton(f'Tᴀᴍ', 'ftam'),
                                  InlineKeyboardButton(f'Hɪɴ', 'fhin')
                               ],[
-                                 InlineKeyboardButton("🔥 ᴄʜᴀɴɴᴇʟ 🔥", url=(MAIN_CHANNEL))
+                                 InlineKeyboardButton("🔰 JOIN ❗️C H A N N E L 🔰", url=(MAIN_CHANNEL))
                                 ]
                             ]
                         )
