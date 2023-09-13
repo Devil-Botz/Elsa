@@ -155,7 +155,7 @@ Helps you to know your ping
 
  /ping - <b>To get your ping.</b>
 
-<b>🛠️Usage🛠️ :</b>
+<b> Usage :</b>
  This commands can be used in pm and groups
  This commands can be used buy everyone in the groups and bots pm
  Share us for more features"""
