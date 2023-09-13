@@ -164,11 +164,11 @@ Helps you to know your ping
  𝐔𝐒𝐀𝐆𝐄
 To Get Sticker ID
  
-  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+   𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
  
  Reply To Any Sticker [/stickerid]"""
 
-    FONT_TXT= """⚙️ 𝐔𝐒𝐀𝐆𝐄
+    FONT_TXT= """ 𝐔𝐒𝐀𝐆𝐄
 
 𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
 
