@@ -34,10 +34,10 @@ class script(object):
  𝙰𝙻𝙴𝚁𝚃 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙷𝙰𝚅𝙴 𝙰 𝙻𝙸𝙼𝙸𝚃 𝙾𝙵  𝙲𝙷𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝚂.</b>
 
 <b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+ /filter - <code>add a filter in chat</code>
+ /filters - <code>list all the filters of a chat</code>
+ /del - <code>delete a specific filter in chat</code>
+ /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
