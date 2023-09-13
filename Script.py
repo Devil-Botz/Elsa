@@ -148,7 +148,7 @@ Do as you wish with telegra.ph module!
     DEPLOY_TXT= """𝙸𝙵 𝚈𝙾𝚄 𝙵𝙰𝙲𝙸𝙽𝙶 𝙰𝙽𝚈 𝙸𝚂𝚂𝚄𝙴 𝙸𝙽 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴..."""
    
     PINGS_TXT = """<b>Ping Testing:</b>
-Helps you to know your ping 🚶🏼‍♂️
+Helps you to know your ping 
 <b>Commands:</b>
  /alive - To check you are alive.
  /help - To get help.
