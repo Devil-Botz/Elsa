@@ -108,7 +108,7 @@ these are the extra features of Elsa
 <code>/mp4 https://youtu.be/example...</code>
 <code>/video https://youtu.be/example...</code>"""
 
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
+    TTS_TXT = """Help: <b> TTS  module:</b>
 Translate text to speech
 <b>Commands and Usage:</b>
  /tts <text> : convert text to speech"""
