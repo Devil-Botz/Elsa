@@ -2,7 +2,7 @@ import re
 import os
 from os import environ
 from pyrogram import enums
-from Script import script
+from Script import script 
 
 import asyncio
 import json
