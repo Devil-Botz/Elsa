@@ -83,10 +83,10 @@ class script(object):
 these are the extra features of Elsa
 
 <b>Commands and Usage:</b>
-• /id - <code>get id of a specified user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+ /id - <code>get id of a specified user.</code>
+ /info  - <code>get information about a user.</code>
+ /imdb  - <code>get the film information from IMDb source.</code>
+ /search  - <code>get the film information from various sources.</code>"""
 
     SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
 
@@ -100,18 +100,18 @@ these are the extra features of Elsa
 @ARAKAL_THERAVAD_MOVIES"""
 
     VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
-• 𝘜𝘴𝘢𝘨𝘦
+ 𝘜𝘴𝘢𝘨𝘦
 𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/example...)
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+ 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/example...)
+ 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
 <code>/mp4 https://youtu.be/example...</code>
 <code>/video https://youtu.be/example...</code>"""
 
     TTS_TXT = """Help: <b> TTS 🎤 module:</b>
 Translate text to speech
 <b>Commands and Usage:</b>
-• /tts <text> : convert text to speech"""
+ /tts <text> : convert text to speech"""
 
     GTRANS_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖦𝗈𝗈𝗀𝗅𝖾 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾𝗋
 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚝𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎 𝚊 𝚝𝚎𝚡𝚝 𝚝𝚘 𝖺𝗇𝗒 𝚕𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜 𝚢𝚘𝚞 𝚠𝚊𝚗𝚝. 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚠𝚘𝚛𝚔𝚜 𝚘𝚗 𝚋𝚘𝚝𝚑 𝚙𝚖 𝚊𝚗𝚍 𝚐𝚛𝚘𝚞𝚙 ✯
@@ -120,17 +120,17 @@ Translate text to speech
 ➤ 𝖭𝗈𝗍𝖾:
 𝖶𝗁𝗂𝗅𝖾 𝗎𝗌𝗂𝗇𝗀 /tr 𝗒𝗈𝗎 𝗌𝗁𝗈𝗎𝗅𝖽 𝗌𝗉𝖾𝖼𝗂𝖿𝗒 𝗍𝗁𝖾 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾 𝖼𝗈𝖽𝖾
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾: /𝗍𝗋 𝗆𝗅
-• 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
-• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
-• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
+ 𝖾𝗇 = 𝖤𝗇𝗀𝗅𝗂𝗌𝗁
+ 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
+ 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
 
     TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
 Do as you wish with telegra.ph module!
 </b>USAGE:</b>
 ✒️ /telegraph - Send me Picture or Vide Under (5MB)
 <b>NOTE:</b>
-• This Command Is Available in goups and pms
-• This Command Can be used by everyone"""
+ This Command Is Available in goups and pms
+ This Command Can be used by everyone"""
 
     CORONA_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚒𝚕𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍 
@@ -151,18 +151,18 @@ Do as you wish with telegra.ph module!
     PINGS_TXT = """<b>Ping Testing:</b>
 Helps you to know your ping 🚶🏼‍♂️
 <b>Commands:</b>
-• /alive - To check you are alive.
-• /help - To get help.
+ /alive - To check you are alive.
+ /help - To get help.
 
-• /ping - <b>To get your ping.</b>
+ /ping - <b>To get your ping.</b>
 
 <b>🛠️Usage🛠️ :</b>
-• This commands can be used in pm and groups
-• This commands can be used buy everyone in the groups and bots pm
-• Share us for more features"""
+ This commands can be used in pm and groups
+ This commands can be used buy everyone in the groups and bots pm
+ Share us for more features"""
  
     STICKER_TXT = """<b>𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.</b>
-• 𝐔𝐒𝐀𝐆𝐄
+ 𝐔𝐒𝐀𝐆𝐄
 To Get Sticker ID
  
   ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
@@ -189,7 +189,7 @@ Group Support
     WHOIS_TXT ="""<b>WHOIS MODULE</b>
 Note:- <b>Give a user details</b>
 
-•/whois :-give a user full details 📑"""
+/whois :-give a user full details 📑"""
 
     URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 <i><b>𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 </i></b>
@@ -214,31 +214,31 @@ Note:- <b>Give a user details</b>
 This module only works for my admins
 
 <b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /delete - <code>to delete a specific file from db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>
-• /grp_broadcast - <code>to broadcast a message to all groups</code>
-• /gfilter - <code>To add global filter</code>
-• /gfilters - <code>To view global filters</code>
-• /delallg - <code>To delete all global filters from database</code>
-• /delg - <code>To delete a specific global filter</code>
-• /setskip - <code>Skip no of files before indexing</code>
-• /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>
-• /deletefiles - <code>Delete CamRip and PreDvD files delete from database </code>"""
+ /logs - <code>to get the rescent errors</code>
+ /stats - <code>to get status of files in db.</code>
+ /delete - <code>to delete a specific file from db.</code>
+ /users - <code>to get list of my users and ids.</code>
+ /chats - <code>to get list of the my chats and ids </code>
+ /leave  - <code>to leave from a chat.</code>
+ /disable  -  <code>do disable a chat.</code>
+ /ban  - <code>to ban a user.</code>
+ /unban  - <code>to unban a user.</code>
+ /channel - <code>to get list of total connected channels</code>
+ /broadcast - <code>to broadcast a message to all users</code>
+ /grp_broadcast - <code>to broadcast a message to all groups</code>
+ /gfilter - <code>To add global filter</code>
+ /gfilters - <code>To view global filters</code>
+ /delallg - <code>To delete all global filters from database</code>
+ /delg - <code>To delete a specific global filter</code>
+ /setskip - <code>Skip no of files before indexing</code>
+ /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>
+ /deletefiles - <code>Delete CamRip and PreDvD files delete from database </code>"""
     
     STATUS_TXT = """<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱</b>"""
+ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
+ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
+ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
+ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱</b>"""
 
     CARB_TXT = """<b>Help</b> : 𝗖𝗔𝗥𝗕𝗢𝗡
 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
@@ -356,5 +356,5 @@ Elsa
 
     CON_TXT = """<b><u>ᴄᴏᴜɴᴛʀʏ ɪɴғᴏ</b></u>
 <b>Tʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ғɪɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs</b>
-• /country [𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾] 
+ /country [𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾] 
 𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :- <code>/country India</code>"""
