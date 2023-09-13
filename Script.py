@@ -94,7 +94,7 @@ these are the extra features of Elsa
 
 <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 
-⏭️ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
 
 <b>𝚆𝙾𝚁𝙺𝚂 𝙱𝙾𝚃𝙷 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙿𝙼</b>
 @ARAKAL_THERAVAD_MOVIES"""
