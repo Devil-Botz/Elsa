@@ -113,7 +113,9 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>Your message has been sent to my moderators !</b>")                   
+    await message.reply_text("<b>👉 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗔𝗟𝗔𝗬𝗔𝗟𝗔𝗠 , 𝗧𝗔𝗠𝗜𝗟 ,  𝗘𝗡𝗚𝗟𝗜𝗦𝗛 , 𝗧𝗘𝗟𝗨𝗚𝗨 ,  𝗞𝗔𝗡𝗡𝗔𝗗𝗔 ,  𝗛𝗜𝗡𝗗𝗜 ,  𝗠𝗢𝗩𝗜𝗘𝗦 ✌️,
+    🔰 𝗚𝗥𝗢𝗨𝗣  𝗝 𝗢 𝗜 𝗡 ❤️ 𝗡 𝗢 𝗪 .🔥  𝗟𝗜𝗡𝗞  👇,
+    InlineKeyboardButton("🔰 JOIN ❗️C H A N N E L 🔰", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")</b>")                   
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
