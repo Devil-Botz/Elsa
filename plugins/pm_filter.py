@@ -1295,7 +1295,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>👤𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : {message.from_user.mention}\n {search}\n\n"
+        cap = f"<b><i>Hai 👋 {} </b>😍 : {message.from_user.mention}\n {search}\n\n"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
