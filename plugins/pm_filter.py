@@ -119,8 +119,7 @@ async def pm_text(bot, message):
                                      InlineKeyboardButton('🔰 JOIN ❗️C H A N N E L 🔰', url='https://t.me/ARAKAL_THERAVAD_MOVIES')
                                  ]]
                              )
-                            )
-                       
+                            )                     
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
