@@ -8,8 +8,6 @@ requests
 bs4
 git+https://github.com/Joelkb/cinemagoer
 Heroku3
-#ffmpeg-python
-3ffmpeg
 requests
 aiohttp==3.7.4
 datetime
