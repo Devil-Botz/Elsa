@@ -10,7 +10,7 @@ class script(object):
 
     ABOUT_TXT = """<b> 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
  𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a https://t.me/ARAKAL_THERAVAD_MOVIES>ARAKAL_THERAVAD_MOVIES.𝙲𝙾𝙼</a>
- 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾: <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIES>ARAKAL_THERAVAD_MOVIES</a>
+ 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾: <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS>ARAKAL_THERAVAD_MOVIES</a>
  𝙳𝙴𝚅: <a https://t.me/ARAKAL_THERAVAD_MOVIES> ARAKAL_THERAVAD_MOVIES </a>
  𝙻𝙸𝙱𝚁𝙰𝚁𝚈: ARAKAL_THERAVAD_MOVIES
  𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: ARAKAL_THERAVAD_MOVIES
