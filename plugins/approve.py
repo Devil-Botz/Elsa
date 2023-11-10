@@ -7,7 +7,7 @@ from pyrogram.errors import UserIsBlocked, PeerIdInvalid
 async def accept_request(client, r):
 
     rm = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🎭 𝘑𝘖𝘐𝘕 𝘍𝘖𝘙 𝘔𝘖𝘝𝘐𝘌𝘚 🎭", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIES")
+        InlineKeyboardButton("🎭 𝘑𝘖𝘐𝘕 𝘍𝘖𝘙 𝘔𝘖𝘝𝘐𝘌𝘚 🎭", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS")
     ]])
     
     try:
