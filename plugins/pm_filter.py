@@ -113,10 +113,9 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text=f"<b>ഇവിടെ ചോദിച്ചാൽ സിനിമ കിട്ടില്ല ഗ്രൂപ്പിൽ മാത്രം സിനിമ ചോദിക്കുക..!!\n\nGROUP OR BOT ANY PROMBLEM OR BUGS CONTACT GROUP ADMIN = @ARAKAL_THERAVAD_MOVIES_02_bot!!!</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝ᴊᴏɪɴ ᴛᴏ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/ARAKAL_THERAVAD_MOVIES")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
