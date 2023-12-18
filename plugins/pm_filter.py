@@ -196,8 +196,11 @@ async def next_page(bot, query):
                 ]
                 for file in files
         ]
-    
-    
+btn.insert(0,
+               [
+                   InlineKeyboardButton("Send All !", callback_data=f"send_fall#files#{key}#{offset}")                 
+               ]
+               )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -1375,7 +1378,8 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
-                    await fuk.delete()                    
+                    await fuk.delete()
+                    await message.reply(f"Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️")
                     await message.delete()
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
