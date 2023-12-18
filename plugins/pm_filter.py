@@ -195,12 +195,26 @@ async def next_page(bot, query):
                     ),
                 ]
                 for file in files
-        ]
-btn.insert(0,
+            ]
+    btn.insert(0,
                [
-                   InlineKeyboardButton("Send All !", callback_data=f"send_fall#files#{key}#{offset}")                 
+                   InlineKeyboardButton(f' ♀️ {search} ♀️ ', 'qinfo')
                ]
                )
+    btn.insert(1,
+               [
+                   InlineKeyboardButton("Send All !", callback_data=f"send_fall#files#{key}#{offset}"),
+                   InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
+               ]
+               )
+    btn.insert(2,
+               [
+                   InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                   InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                   InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
+                   InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+               ]
+              )
 
     if 0 < offset <= 10:
         off_set = 0
