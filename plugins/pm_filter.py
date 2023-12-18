@@ -1186,11 +1186,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
 
             ]
-        settings = await get_settings(grpid)
-        try:
-            if settings['auto_delete']:
-                settings = await get_settings(grp_id)
-
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
     await query.answer(MSG_ALRT)
