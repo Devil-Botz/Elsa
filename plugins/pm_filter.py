@@ -1119,8 +1119,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except KeyError:
             await save_group_settings(grp_id, 'auto_delete', True)
             settings = await get_settings(grp_id)
+  if settings['auto_delete']:
+                settings = await get_settings(grp_id)
+        except KeyError:
+            await save_group_settings(grp_id, 'auto_delete', True)
+            settings = await get_settings(grp_id)
 
-  if settings is not None:
+        if settings is not None:
             buttons = [
                 [
                     InlineKeyboardButton('Filter Button',
@@ -1166,17 +1171,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ ON' if settings["is_shortlink"] else '❌ OFF',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton("Close", callback_data="close_data")
                 ]
-
+                
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer(MSG_ALRT)      
-
-
+    await query.answer(MSG_ALRT)
+        
 async def auto_filter(client, msg, spoll=False):
     reqstr1 = msg.from_user.id if msg.from_user else 0
     reqstr = await client.get_users(reqstr1)
