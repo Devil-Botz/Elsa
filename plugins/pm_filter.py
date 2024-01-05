@@ -1411,7 +1411,7 @@ async def advantage_spell_chok(client, msg):
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button)
         )
-        await asyncio.sleep(30)
+        await asyncio.sleep(600)
         await k.delete()
         return
     movielist += [movie.get('title') for movie in movies]
@@ -1467,7 +1467,7 @@ async def manual_filters(client, message, text=False):
                                 group_id, 
                                 reply_text, 
                                 disable_web_page_preview=True,
-                                protect_content=True if settings["file_secure"] else False,
+                                protect_content=True if settings["file_secure"] else True,
                                 reply_to_message_id=reply_id
                             )
                             try:
@@ -1500,7 +1500,7 @@ async def manual_filters(client, message, text=False):
                                 reply_text,
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button),
-                                protect_content=True if settings["file_secure"] else False,
+                                protect_content=True if settings["file_secure"] else True,
                                 reply_to_message_id=reply_id
                             )
                             try:
@@ -1529,7 +1529,7 @@ async def manual_filters(client, message, text=False):
                             group_id,
                             fileid,
                             caption=reply_text or "",
-                            protect_content=True if settings["file_secure"] else False,
+                            protect_content=True if settings["file_secure"] else True,
                             reply_to_message_id=reply_id
                         )
                         try:
