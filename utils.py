@@ -55,10 +55,8 @@ async def is_subscribed(bot, query):
 
     if db2().isActive():
         user = await db2().get_user(query.from_user.id)
-        if user:
+        if user: # no need of else cause we need to check if the user is a member in the fsub channel
             return True
-        else:
-            return False
 
     if not AUTH_CHANNEL:
         return True
