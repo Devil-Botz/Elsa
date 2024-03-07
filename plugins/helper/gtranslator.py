@@ -1,44 +1,29 @@
 from googletrans import Translator
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from plugins.helpers.list import list
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+# Assuming 'list' contains language mappings
 
 @Client.on_message(filters.command(["tr"]))
-async def left(client,message):
-	if (message.reply_to_message):
-		try:
-			lgcd = message.text.split("/tr")
-			lg_cd = lgcd[1].lower().replace(" ", "")
-			tr_text = message.reply_to_message.text
-			translator = Translator()
-			translation = translator.translate(tr_text,dest = lg_cd)
-			hehek = InlineKeyboardMarkup(
-                                [
-                                    [
-                                        InlineKeyboardButton(
-                                            text=f"𝘔𝘰𝘳𝘦 𝘓𝘢𝘯𝘨 𝘊𝘰𝘥𝘦𝘴", url="https://cloud.google.com/translate/docs/languages"
-                                        )
-                                    ],
-				    [
-                                        InlineKeyboardButton(
-                                            "𝘊𝘭𝘰𝘴𝘦", callback_data="close_data"
-                                        )
-                                    ],
-                                ]
-                            )
-			try:
-				for i in list:
-					if list[i]==translation.src:
-						fromt = i
-					if list[i] == translation.dest:
-						to = i 
-				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True)
-			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
-			
+async def translate(client, message):
+    if message.reply_to_message:
+        try:
+            lang_code = message.text.split("/tr")[1].strip().lower()
+            tr_text = message.reply_to_message.text
+            translator = Translator()
+            translation = translator.translate(tr_text, dest=lang_code)
 
-		except :
-			print("error")
-	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message")
-			 await ms.delete()
+            from_lang = translation.src
+            to_lang = translation.dest
+            translated_text = translation.text
+
+            print(f"Translated from {from_lang} to {to_lang}: {translated_text}")
+
+            reply_text = f"Translated from {from_lang} to {to_lang}:\n\n{translated_text}"
+            await message.reply_text(reply_text)
+
+        except Exception as e:
+            print("Error:", e)
+            await message.reply_text("An error occurred during translation.")
+    else:
+        await message.reply_text("You can use this command by replying to a message.")
